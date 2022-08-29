@@ -87,12 +87,7 @@
 
 
 
-    .footerr{
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        color: $primary-col-2;
-    }
+
 }
 
 .navv-item{
@@ -103,4 +98,32 @@
     width: 11em;
     font-size: 0.9em;
     font-weight: 600;
+}
+
+
+////////////////////////////////
+ 
+
+.footerr_header{
+    font-size: 1.6em;
+    font-weight: 400;
+}
+@media screen and (max-width: 425px){
+    .footerr{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: $primary-col-2;
+        padding: 2em;
+        padding-top: 3em;
+    }
+
+    .footer_top{
+        text-align: center;
+    }
+
+    .footer_top_one{
+       display: flex;
+       flex-direction: column;
+    }
 }
