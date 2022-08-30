@@ -14,6 +14,86 @@
     background-color: $primary-col-1;
     color: $primary-col-2;
 }
+@media screen and (max-width: 768px){
+    .quick-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.2em;
+        text-align: center;
+    }
+    .quick-info--1{
+        display: flex;
+        justify-content: space-around;
+    }
+    .quick-info--2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0.6em;
+        
+    }
+    div.container-fluid{
+        background-color: $primary-col-1;
+        color: $primary-col-2;
+    }
+
+    section.brandname {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5em;
+        color: brown;
+    }
+
+    .navbar-brand {        
+        color: $primary-col-1;
+    }
+    
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+    }
+
+    .navbar-light .navbar-brand {
+        color: $primary-col-2;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: white;
+        border-color: rgba(0,0,0,.1);
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");        
+        background-color: white;
+    }
+
+    .navbar-light .navbar-nav , .navbar-light .navbar-nav .show>.nav-link {
+        color: rgba(0,0,0,.9);
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: $primary-col-2;
+    }
+
+    .navbar-light .navbar-nav .nav-link{
+        color: $primary-col-2;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+        color: $primary-col-2;
+    }
+
+    .dropdown-toggle::after {
+        float: right;
+    }
+
+
+
+
+}
+
 @media screen and (max-width: 425px){
     .quick-info{
         display: flex;
@@ -28,6 +108,11 @@
     }
     .quick-info--2{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0.6em;
+        margin-right: 8em;
+        margin-left: 8em;
     }
     div.container-fluid{
         background-color: $primary-col-1;
@@ -109,6 +194,84 @@
     font-weight: 600;
     margin-bottom: 0.6em;
 }
+
+@media screen and (max-width: 768px){
+    .footerr{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: $primary-col-2;
+        padding: 2em;
+        padding-top: 3em;
+    }
+
+    .footer_top{
+        text-align: center;
+    }
+
+    .footer_top_one{
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .footer_top_one--1{
+        margin-bottom: 1.5em;
+    }
+
+    .footer_top_one--1--content{
+        display: flex;
+        margin-bottom: 0.8em;
+    }
+
+    .footer_top_one--1--content .last-item{
+        margin-bottom: 0;
+    }
+
+    .footer_top_one--2{
+        margin-bottom: 0.5em;
+    }
+
+    .footer_top_one--2--links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_top_one--2--links a {
+        text-decoration: none;
+        color: $primary-col-2;
+    }
+
+    .footer_top_two{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_gallery{
+        width: 7em;
+        height: 8em;
+    }
+
+    .margin_bottom_small{
+        margin-bottom: 1.2em;
+    }
+
+    .flex_justify_btw{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .working_hours{
+        margin-top: 2em;
+    }
+
+    .footer_bottom{
+        display: flex;        
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 1.5em;
+    }
+}
+
 @media screen and (max-width: 425px){
     .footerr{
         display: flex;
