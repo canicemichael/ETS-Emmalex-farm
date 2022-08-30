@@ -157,7 +157,7 @@
     }
 
     .footer_gallery{
-        width: 5em;
+        width: 7em;
         height: 8em;
     }
 
@@ -172,5 +172,13 @@
 
     .working_hours{
         margin-top: 2em;
+    }
+
+    .footer_bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1.5em;
     }
 }
