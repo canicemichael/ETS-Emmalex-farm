@@ -1,13 +1,6 @@
 @import './reset', './variables';
 
-// .navv {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-left: 2.1em;
-//     margin-right: 2.1em;
-//     background-color: aqua;
-// }
+
 
 .quick-info{
     display: flex;
@@ -272,8 +265,12 @@
 .footerr_header{
     font-size: 1.4em;
     font-weight: 600;
-    margin-bottom: 0.6em;
+    margin-bottom: 1.3em;
 }
+.useful_link:hover{
+    color: $primary-col-4;
+}
+
 @media screen and (min-width: 1024px){
     .footerr{
         display: flex;
@@ -329,7 +326,7 @@
 
     .footer_gallery{
         width: 7em;
-        height: 8em;
+        height: 7em;
     }
 
     .margin_bottom_small{
@@ -485,6 +482,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    .margin_top_small{
+        margin-top: 1.2em;
     }
 
     .footer_gallery{
