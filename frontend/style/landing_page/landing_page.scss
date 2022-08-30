@@ -160,4 +160,17 @@
         width: 5em;
         height: 8em;
     }
+
+    .margin_bottom_small{
+        margin-bottom: 1.2em;
+    }
+
+    .flex_justify_btw{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .working_hours{
+        margin-top: 2em;
+    }
 }
