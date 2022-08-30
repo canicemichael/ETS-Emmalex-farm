@@ -107,6 +107,7 @@
 .footerr_header{
     font-size: 1.4em;
     font-weight: 600;
+    margin-bottom: 0.6em;
 }
 @media screen and (max-width: 425px){
     .footerr{
@@ -128,11 +129,31 @@
     }
 
     .footer_top_one--1{
-        margin-bottom: 0.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .footer_top_one--1--content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.8em;
+    }
+
+    .footer_top_one--1--content .last-item{
+        margin-bottom: 0;
     }
 
     .footer_top_one--2{
         margin-bottom: 0.5em;
+    }
+
+    .footer_top_one--2--links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_top_one--2--links a {
+        text-decoration: none;
+        color: $primary-col-2;
     }
 
     .footer_gallery{
