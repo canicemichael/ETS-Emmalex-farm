@@ -39,6 +39,10 @@ video {
     text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
 }
 
+@media screen and (min-width: 425px) and (max-width: 563px){
+    
+}
+
 @media screen and (min-width: 0px) and (max-width: 425px){
     .welcome_content{
         display: flex;
@@ -80,6 +84,19 @@ video {
     .welcome_service:hover{
         background-color: $primary-col-1;
         color: $primary-col-2;
+    }
+
+    // section donkey_sections
+    .donkey_sections{
+        padding: 3em 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .donkey_sections_cont{
+        width: auto;
+        height: 24em;
+        border: 1px solid red;
+        margin-bottom: 1em;
     }
 }
 
