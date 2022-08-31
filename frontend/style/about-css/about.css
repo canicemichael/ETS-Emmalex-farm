@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 
-.container {
+.context {
   display: flex;
   width: 100%;
   flex-direction: column;
