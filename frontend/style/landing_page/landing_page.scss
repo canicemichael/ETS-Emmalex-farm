@@ -367,21 +367,34 @@
 .navbar-collapse{
     margin-left: 8em;
 }
-@media screen and (min-width: 1077px) {
+
+@media screen and (max-width: 1446px) {
     .navbar-collapse{
-        margin-left: 12em;
+        margin-left: 27em;
     }
 }
-@media screen and (min-width: 1137px) {
+@media screen and (max-width: 1316px) {
     .navbar-collapse{
-        margin-left: 16em;
+        margin-left: 25em;
     }
 }
-@media screen and (min-width: 1213px) {
+@media screen and (max-width: 1213px) {
     .navbar-collapse{
         margin-left: 20em;
     }
 }
+@media screen and (max-width: 1137px) {
+    .navbar-collapse{
+        margin-left: 16em;
+    }
+}
+@media screen and (max-width: 1077px) {
+    .navbar-collapse{
+        margin-left: 12em;
+    }
+}
+
+
 @media screen and (max-width: 988px) {
     .navbar-collapse{
         margin-left: 0;
