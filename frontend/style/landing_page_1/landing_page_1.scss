@@ -389,10 +389,6 @@ ul { list-style-type: none; }
     padding: 2.5em 1.3em;
     margin-bottom: 0.7em;
 }
-.our_services_icon{    
-    // background-color: $primary-col-4;
-    // display: inline;
-}
 .service_icon{
     padding: 2em 2em;
     border-radius: 50%;
@@ -437,4 +433,33 @@ ul { list-style-type: none; }
     .our_services_desc{
         font-size: 1.3em;
     }
+}
+
+//////////////////////////////////
+// supporters
+
+.supporters{
+    height: 8em;
+    width: 100%;
+    background-color: $primary-col-4;
+}
+.supporters_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+//////////////////////////////////
+// home_gallery
+
+.home_gallery{
+    margin: 2.5em 1.5em;
+}
+
+.home_gallery_options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
