@@ -342,7 +342,16 @@
 
 
 /////////////////////////////////
+// HOME PAGE
 
+.welcome{
+    height: 80vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
