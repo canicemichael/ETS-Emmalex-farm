@@ -310,6 +310,7 @@ video {
 
 .our_about_us{
     display: flex;
+    padding: 0 .5em;
 }
 .our_about_us--1{
     width: 50%;
@@ -328,7 +329,7 @@ video {
     font-size: 1.2em;
     font-weight: 600;
     color: $primary-col-1;
-    
+    margin-bottom: 0.8em;
 }
 .our_about_us_desc{
     font-size: 1.4em;
@@ -337,7 +338,7 @@ video {
     line-height: 1.4em;
 }
 .our_about_us_brief{
-    margin: 2em 0;
+    margin: 1em 0;
 }
 .about_us-image{
     height: 20em;
@@ -377,6 +378,13 @@ ul { list-style-type: none; }
     }
 }
 
+@media screen and (max-width: 1312px) {
+    .about_us-image {
+        height: 23em;
+        width: 28em;
+    }
+}
+
 @media screen and (min-width: 768.1px) and (max-width: 1024px){
     .our_about_us{        
         padding: 3em 3em;
@@ -387,7 +395,29 @@ ul { list-style-type: none; }
         justify-content: center;
     }
     .about_us-image {
-        height: 29em;
+        height: 21em;
+        width: 21em;
+    }
+}
+
+@media screen and (max-width: 713px) {
+    .our_about_us{
+        flex-direction: column;
+    }
+    .our_about_us--1 {
+        // display: flex;
+        // justify-content: center;
+        width: 100%;
+    }
+    .our_about_us--2 {
+        display: flex;
+        align-self: center;
+        width: 100%;
+    }
+    .about_us-image {
+        height: 21em;
+        width: 100%;
+        align-self: center;
     }
 }
 
@@ -401,7 +431,8 @@ ul { list-style-type: none; }
         justify-content: center;
     }
     .about_us-image {
-        height: 29em;
+        height: 21em;
+        width: 21em;
     }
 }
 
@@ -459,11 +490,27 @@ ul { list-style-type: none; }
     background-color: $primary-col-2;
     padding: 2.5em 1.3em;
     margin-bottom: 0.7em;
+    transition: 1s;
+}
+.our_services_card:hover {
+    .service_icon{
+        background-color: $primary-col-3;
+        color: $primary-col-2;
+    }    
+}
+
+.our_services_icon{
+    margin-bottom: 1.3em;
 }
 .service_icon{
-    padding: 2em 2em;
+    padding: 0.7em 0.7em;
+    font-size: 2em;
     border-radius: 50%;
     background-color: $primary-col-4;
+}
+.our_services_card_head{
+    font-size: 1.4em;
+    font-weight: 600;
 }
 @media screen and (min-width: 1024.1px) and (max-width: 1442px){
     .our_services_cont{
@@ -510,16 +557,27 @@ ul { list-style-type: none; }
 // supporters
 
 .supporters{
-    height: 8em;
+    padding: 2.2em 0;
+    height: auto;
     width: 100%;
     background-color: $primary-col-4;
 }
 .supporters_cont{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
+}
+.supporters_title{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.supporter_icon{
+    font-size: 4em;
+}
+.supporters_name{
+    font-weight: 600;
 }
 
 //////////////////////////////////
