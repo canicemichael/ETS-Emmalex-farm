@@ -47,6 +47,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #c53a21;
+}
+.dropdown-item {
+  color: #462222;
+}
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .quick-info {
     display: flex;
@@ -61,11 +67,11 @@ img {
   }
   .quick-info--2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 0.6em;
-    margin-right: 21em;
-    margin-left: 21em;
+  }
+  .quick-info--2-social {
+    margin-left: 3em;
   }
   div.container-fluid {
     background-color: #462222;
@@ -134,9 +140,6 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 0.6em;
-    margin-right: 15em;
-    margin-left: 15em;
   }
   div.container-fluid {
     background-color: #462222;
@@ -187,6 +190,23 @@ img {
   .navbar-light .navbar-nav .nav-link:focus,
   .navbar-light .navbar-nav .nav-link:hover {
     color: #fff;
+  }
+}
+@media screen and (max-width: 663px) {
+  .quick-info--2 {
+    flex-direction: column;
+    width: 35%;
+  }
+  .quick-info--2-social {
+    margin-left: 0;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 563px) {
+  .quick-info--2 {
+    width: auto;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 563px) {
@@ -331,9 +351,41 @@ img {
     color: #fff;
   }
 }
-@media screen and (min-width: 992px) {
-  .navbar-light .navbar-brand {
-    display: none;
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-collapse {
+  margin-left: 8em;
+}
+@media screen and (max-width: 1446px) {
+  .navbar-collapse {
+    margin-left: 27em;
+  }
+}
+@media screen and (max-width: 1316px) {
+  .navbar-collapse {
+    margin-left: 25em;
+  }
+}
+@media screen and (max-width: 1213px) {
+  .navbar-collapse {
+    margin-left: 20em;
+  }
+}
+@media screen and (max-width: 1137px) {
+  .navbar-collapse {
+    margin-left: 16em;
+  }
+}
+@media screen and (max-width: 1077px) {
+  .navbar-collapse {
+    margin-left: 12em;
+  }
+}
+@media screen and (max-width: 988px) {
+  .navbar-collapse {
+    margin-left: 0;
   }
 }
 .footerr_header {
@@ -346,7 +398,7 @@ img {
   color: #fff;
 }
 .useful_link:hover {
-  color: #c5c521;
+  color: #c53a21;
 }
 .divider_line {
   border-bottom: 2px solid gray;
