@@ -293,15 +293,15 @@
         <h1 class="our_services_desc">Look At Gallery For Details</h1>
       </div>
       <div class="home_gallery_options">
-        <button class="home_gallery_btn">All work1</button>
-        <button class="home_gallery_btn">Planted Grass</button>
-        <button class="home_gallery_btn">Feed</button>
-        <button class="home_gallery_btn">Medicine</button>
-        <button class="home_gallery_btn">Stable</button>
-        <button class="home_gallery_btn">Abbatoir</button>
+        <button class="home_gallery_btn" id="all-work-btn" onclick="myFunct()">All work</button>
+        <button class="home_gallery_btn" id="planted-grass-btn" onclick="myFunct()">Planted Grass</button>
+        <button class="home_gallery_btn" id="feed-btn">Feed</button>
+        <button class="home_gallery_btn" id="medicine-btn">Medicine</button>
+        <button class="home_gallery_btn" id="stable-btn">Stable</button>
+        <button class="home_gallery_btn" id="abbatoir-btn">Abbatoir</button>
       </div>
       <div class="home_gallery_photos">
-        <div class="home_gallery_pht_1">
+        <div class="home_gallery_pht_1 display_nonee" id="abbatoir">
           <img class="home_gallery--img" src="../../assets/landing_page/gallery1.png" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/gallery3.png" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/gallery2.png" alt="">
@@ -309,25 +309,25 @@
           <img class="home_gallery--img" src="../../assets/landing_page/gallery8.png" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/gallery11.png" alt="">
         </div>
-        <div class="home_gallery_pht_2">
+        <div class="home_gallery_pht_1 display_nonee" id="farm-crop">
           <img class="home_gallery--img" src="../../assets/landing_page/farm-crop-1.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/crop-farm-2.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/crop-farm-3.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/crop-farm-4.jpg" alt="">
         </div>
-        <div class="home_gallery_pht_3">
+        <div class="home_gallery_pht_1 display_nonee" id="feed">
           <img class="home_gallery--img" src="../../assets/landing_page/feed1.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/feed2.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/feed3.png" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/feed4.png" alt="">
         </div>
-        <div class="home_gallery_pht_4">
+        <div class="home_gallery_pht_1 display_nonee" id="medicine">
           <img class="home_gallery--img" src="../../assets/landing_page/medicine.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/medicine2.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/medicine3.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/medicine4.jpg" alt="">
         </div>
-        <div class="home_gallery_pht_5">
+        <div class="home_gallery_pht_1 display_nonee" id="stable">
           <img class="home_gallery--img" src="../../assets/landing_page/stable1.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/stable2.jpg" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/stable3.jpg" alt="">
@@ -335,7 +335,32 @@
           <img class="home_gallery--img" src="../../assets/landing_page/stable5.webp" alt="">
           <img class="home_gallery--img" src="../../assets/landing_page/sbale6.jpg" alt="">
         </div>
-
+        <div class="home_gallery_pht_2 display_nonee" id="all-work">
+          <img class="home_gallery--img" src="../../assets/landing_page/gallery1.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/gallery3.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/gallery2.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/gallery7.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/gallery8.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/gallery11.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/farm-crop-1.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/crop-farm-2.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/crop-farm-3.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/crop-farm-4.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/feed1.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/feed2.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/feed3.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/feed4.png" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/medicine.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/medicine2.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/medicine3.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/medicine4.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/stable1.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/stable2.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/stable3.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/stable4.jpg" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/stable5.webp" alt="">
+          <img class="home_gallery--img" src="../../assets/landing_page/sbale6.jpg" alt="">
+        </div>
       </div>
     </section>
 
@@ -443,6 +468,42 @@
           </button>
         </div>
       </div>
+    </section>
+
+    <!-- our blog post -->
+    <section class="blog_post">
+      <h1 class="our_services_head">OUR BLOG POST</h1>
+      <h1 class="our_services_desc">Our Latest News & Articles !</h1>
+      <div class="our_blog_post_cards">
+        <div class="card" style="width: 18rem;">
+          <img src="../../assets/landing_page/gallery5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-date"><i class="fa-solid fa-clock"></i> 22 May 2022</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../../assets/landing_page/gallery12.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-date"><i class="fa-solid fa-clock"></i> 22 May 2022</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../../assets/landing_page/crop-farm-3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-date"><i class="fa-solid fa-clock"></i> 22 May 2022</p>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
     </section>
 
 <!-- footer section -->
