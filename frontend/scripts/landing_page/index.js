@@ -9,7 +9,8 @@ function setPlaySpeed() {
 setPlaySpeed();
 
 // section our success gallery
-let allHomeGallery = document.getElementsByClassName("home_gallery_pht_1");
+let allHomeGallery = document.querySelector(".home_gallery_pht_1");
+
 let allWorkBtn = document.getElementById("all-work-btn");
 let platedGrassBtn = document.getElementById("planted-grass-btn");
 let feedBtn = document.getElementById("feed-btn");
@@ -17,29 +18,115 @@ let medicineBtn = document.getElementById("medicine-btn");
 let stableBtn = document.getElementById("stable-btn");
 let abbatoirBtn = document.getElementById("abbatoir-btn");
 
-let allWork = document.getElementsById("all-work");
-let abbatoir = document.getElementsById("abbatoir");
-// let farmCrop = document.getElementsById("farm-crop");
-let feed = document.getElementsById("feed");
-let medicine = document.getElementsById("medicine");
-let stable = document.getElementsById("stable");
+let allWork = document.getElementById("all-work");
+let abbatoir = document.getElementById("abbatoir");
+let farmCrop = document.getElementById("farm-crop");
+let feed = document.getElementById("feed");
+let medicine = document.getElementById("medicine");
+let stable = document.getElementById("stable");
 
-let allBtns = document.querySelectorAll("button");
+let first = document.querySelector(".first");
+let second = document.querySelector(".second");
+let third = document.querySelector(".third");
+let fourth = document.querySelector(".fourth");
+let fifth = document.querySelector(".fifth");
 
-// For each button, register an event listener
-// allBtns.forEach(function (elem) {
-//   elem.addEventListener("click", function (e) {
-//     // On click, remove the MyClass on ALL buttons
-//     allBtns.forEach(function (el) {
-//       el.classList.remove("MyClass");
-//     });
+let pageOne = document.querySelector(".pageOne");
+let pageTwo = document.querySelector(".pageTwo");
+let pageThree = document.querySelector(".pageThree");
+let pageFour = document.querySelector(".pageFour");
+let pageFive = document.querySelector(".pageFive");
 
-//     // Add the class on clicked one
-//     e.target.classList.add("MyClass");
+platedGrassBtn.addEventListener("click", () => {
+  farmCrop.style.display = "flex";
+  allWork.style.display = "none";
+  abbatoir.style.display = "none";
+  feed.style.display = "none";
+  medicine.style.display = "none";
+  stable.style.display = "none";
+});
 
-//     // Now pass the data-href to your iframe
-//     let theHREFtoOpen = e.target.getAttribute("data-href");
-//     console.log(theHREFtoOpen);
-//     //document.querySelector("#your-iframe").src = theHREFtoOpen
-//   });
-// });
+allWorkBtn.addEventListener("click", () => {
+  farmCrop.style.display = "none";
+  allWork.style.display = "flex";
+  abbatoir.style.display = "none";
+  feed.style.display = "none";
+  medicine.style.display = "none";
+  stable.style.display = "none";
+});
+
+feedBtn.addEventListener("click", () => {
+  farmCrop.style.display = "none";
+  allWork.style.display = "none";
+  abbatoir.style.display = "none";
+  feed.style.display = "flex";
+  medicine.style.display = "none";
+  stable.style.display = "none";
+});
+
+medicineBtn.addEventListener("click", () => {
+  farmCrop.style.display = "none";
+  allWork.style.display = "none";
+  abbatoir.style.display = "none";
+  feed.style.display = "none";
+  medicine.style.display = "flex";
+  stable.style.display = "none";
+});
+
+stableBtn.addEventListener("click", () => {
+  farmCrop.style.display = "none";
+  allWork.style.display = "none";
+  abbatoir.style.display = "none";
+  feed.style.display = "none";
+  medicine.style.display = "none";
+  stable.style.display = "flex";
+});
+
+abbatoirBtn.addEventListener("click", () => {
+  farmCrop.style.display = "none";
+  allWork.style.display = "none";
+  abbatoir.style.display = "flex";
+  feed.style.display = "none";
+  medicine.style.display = "none";
+  stable.style.display = "none";
+});
+
+first.addEventListener("click", () => {
+  pageOne.style.display = "block";
+  pageTwo.style.display = "none";
+  pageThree.style.display = "none";
+  pageFour.style.display = "none";
+  pageFive.style.display = "none";
+});
+
+second.addEventListener("click", () => {
+  pageOne.style.display = "none";
+  pageTwo.style.display = "block";
+  pageThree.style.display = "none";
+  pageFour.style.display = "none";
+  pageFive.style.display = "none";
+});
+
+third.addEventListener("click", () => {
+  pageOne.style.display = "none";
+  pageTwo.style.display = "none";
+  pageThree.style.display = "block";
+  pageFour.style.display = "none";
+  pageFive.style.display = "none";
+});
+
+fourth.addEventListener("click", () => {
+  pageOne.style.display = "none";
+  pageTwo.style.display = "none";
+  pageThree.style.display = "none";
+  pageFour.style.display = "block";
+  pageFive.style.display = "none";
+});
+
+fifth.addEventListener("click", () => {
+  pageOne.style.display = "none";
+  pageTwo.style.display = "none";
+  pageThree.style.display = "none";
+  pageFour.style.display = "none";
+  pageFive.style.display = "block";
+});

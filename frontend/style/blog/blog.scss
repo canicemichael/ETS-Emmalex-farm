@@ -6,13 +6,12 @@
  .blog_post{
     margin: 0em 0;
     padding-bottom: 1em;
-    background-color: gray;
+    background-color: rgb(233, 232, 232);
  }
 
  .blog_post_intro{
     height: 19em;
     width: 100%;
-    background-color: aqua;
     color: $primary-col-2;
     display: flex;
     flex-direction: column;
@@ -21,8 +20,19 @@
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(../../assets/blog/stable1.jpg);
     background-position: center;
  }
+ .blog_post_intro--2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    background-color: $primary-col-1;
+    color: $primary-col-2;
+    padding: 1em 0;
+    border-top: 0.7em solid $primary-col-4;
+ }
  .blog_post_header{
-    margin-bottom: 0.4em;
+    margin-bottom: 0.2em;
     font-size: 2.1em;
     font-weight: 600;
  }
@@ -34,17 +44,28 @@
  .blog_post_body--1{
     width: 68%;
     background-color: $primary-col-2;
+    border-radius: 10px;
  }
  .blog_post_body--2{
     width: 30%;
     background-color: $primary-col-2;
+    border-radius: 10px;
+    padding: 0.7em 0;
  }
  .blog_post_img_container{
     margin: 0 0;
  }
+ p.dash{
+    width: 7em;
+    border-top: 3px solid black;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+ }
  .blog_post_img{
     width: 100%;
     height: 25em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
  }
  .blog_post_describtion{
     margin: 2em 2em;
@@ -54,4 +75,14 @@
  .categories{
     padding: 2em 2em;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .categories_head{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.6em;
+    display: flex;
  }

@@ -663,16 +663,34 @@ ul { list-style-type: none; }
     display: flex;
     flex-wrap: wrap;
 }
+#stable{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .home_gallery--img{
     height: 15em;
     width: 20em;
     margin: 1.3em;
 }
-.display_nonee{
+.home_gallery_pht_1, .home_gallery_pht_2{
     display: none;
 }
-
+.pageTwo, .pageThree, .pageFour, .pageFive{
+    display: none;
+}
+.allWorks_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allWorks_buttons button{
+    margin: 0 1em;
+    border-radius: 5px;
+    background-color: $primary-col-1;
+    color: $primary-col-2;
+}
 
 //////////////////////////////////
 // customer review
