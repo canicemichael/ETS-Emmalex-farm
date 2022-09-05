@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(../../assets/blog/stable1.jpg);
+    background-image: url(../../assets/landing_page/crop-farm-2.jpg);
     background-position: center;
  }
  .blog_post_intro--2{
@@ -44,12 +44,10 @@
  .blog_post_body--1{
     width: 68%;
     background-color: $primary-col-2;
-    border-radius: 10px;
  }
  .blog_post_body--2{
     width: 30%;
     background-color: $primary-col-2;
-    border-radius: 10px;
     padding: 0.7em 0;
  }
  .blog_post_img_container{
@@ -64,8 +62,6 @@
  .blog_post_img{
     width: 100%;
     height: 25em;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
  }
  .blog_post_describtion{
     margin: 2em 2em;
@@ -77,12 +73,25 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
  }
  .categories_head{
     font-size: 1.5em;
     font-weight: 600;
     margin-bottom: 0.6em;
-    display: flex;
  }
+ .categories_head:after {
+   content: "";
+   width: 55px;
+   height: 5px;
+   display: block;
+   background-color: $primary-col-3;
+   margin-top: 10px;
+ }
+
+.cat_item{
+   display: flex;
+}
+.cat_item_icon{
+   padding-top: 0.2em;
+   margin-right: 0.4em;
+}
