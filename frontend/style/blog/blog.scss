@@ -10,7 +10,7 @@
  }
 
  .blog_post_intro{
-    height: 19em;
+    height: 13em;
     width: 100%;
     color: $primary-col-2;
     display: flex;
@@ -37,28 +37,22 @@
     font-weight: 600;
  }
  .blog_post_body{
-    margin: 3em 1.5em;
+    margin: 3em 7em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
  }
  .blog_post_body--1{
-    width: 68%;
+    width: 55%;
     background-color: $primary-col-2;
  }
  .blog_post_body--2{
     width: 30%;
-    background-color: $primary-col-2;
-    padding: 0.7em 0;
+    background-color: $background-col-one;
  }
  .blog_post_img_container{
     margin: 0 0;
  }
- p.dash{
-    width: 7em;
-    border-top: 3px solid black;
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
- }
+
  .blog_post_img{
     width: 100%;
     height: 25em;
@@ -66,13 +60,35 @@
  .blog_post_describtion{
     margin: 2em 2em;
  }
+ .blog_post_subject{
+   font-size: 1.4em;
+   font-weight: 600;
+ }
+ .blog_post_info{
+   display: flex;
+ }
+ .date{
+   margin-right: 1.4em;
+   color: $primary-col-1;
+ }
+ .date:hover{
+   color: $primary-col-4;
+ }
+
+ .comment{
+   color: $primary-col-1;
+ }
+ .comment:hover{
+   color: $primary-col-4;
+ }
 
 
  .categories{
     padding: 2em 2em;
-    background-color: white;
+    background-color: red;
     display: flex;
     flex-direction: column;
+    margin: 0.8em 0;
  }
  .categories_head{
     font-size: 1.5em;
@@ -95,3 +111,27 @@
    padding-top: 0.2em;
    margin-right: 0.4em;
 }
+
+.recent_post{
+   background-color: green;
+   margin: 0.8em 0;
+   padding: 1.2em 2em;
+}
+.recent_post_head{
+   font-size: 1.5em;
+   font-weight: 600;
+   margin-bottom: 0.6em;
+}
+.recent_post_head:after {
+   content: "";
+   width: 55px;
+   height: 5px;
+   display: block;
+   background-color: $primary-col-3;
+   margin-top: 10px;
+ }
+
+
+
+
+//  make the navlink of the current page you're in the link with the active state
