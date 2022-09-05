@@ -92,7 +92,7 @@ abbatoirBtn.addEventListener("click", () => {
 });
 
 first.addEventListener("click", () => {
-  pageOne.style.display = "block";
+  pageOne.style.display = "flex";
   pageTwo.style.display = "none";
   pageThree.style.display = "none";
   pageFour.style.display = "none";
@@ -101,7 +101,7 @@ first.addEventListener("click", () => {
 
 second.addEventListener("click", () => {
   pageOne.style.display = "none";
-  pageTwo.style.display = "block";
+  pageTwo.style.display = "flex";
   pageThree.style.display = "none";
   pageFour.style.display = "none";
   pageFive.style.display = "none";
@@ -110,7 +110,7 @@ second.addEventListener("click", () => {
 third.addEventListener("click", () => {
   pageOne.style.display = "none";
   pageTwo.style.display = "none";
-  pageThree.style.display = "block";
+  pageThree.style.display = "flex";
   pageFour.style.display = "none";
   pageFive.style.display = "none";
 });
@@ -119,7 +119,7 @@ fourth.addEventListener("click", () => {
   pageOne.style.display = "none";
   pageTwo.style.display = "none";
   pageThree.style.display = "none";
-  pageFour.style.display = "block";
+  pageFour.style.display = "flex";
   pageFive.style.display = "none";
 });
 
@@ -128,7 +128,7 @@ fifth.addEventListener("click", () => {
   pageTwo.style.display = "none";
   pageThree.style.display = "none";
   pageFour.style.display = "none";
-  pageFive.style.display = "block";
+  pageFive.style.display = "flex";
 });
 
 // navbar active state code

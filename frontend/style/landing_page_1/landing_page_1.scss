@@ -183,6 +183,7 @@ video {
     display: flex;
     justify-content: space-between;
     padding: 3em 2em;
+    background-color: $background-col-one;
 }
 .donkey_section--img{
     height: 24em;
@@ -337,6 +338,7 @@ video {
 .our_about_us{
     display: flex;
     padding: 0 .5em;
+    background-color: $background-col-one;
 }
 .our_about_us--1{
     width: 50%;
@@ -502,7 +504,7 @@ ul { list-style-type: none; }
 
 .our_services{
     padding: 2.5em 2em;
-    background-color: $gray;
+    background-color: $background-col-one;
 }
 .our_services_container{
     display: flex;
@@ -632,6 +634,9 @@ ul { list-style-type: none; }
 
 .home_gallery{
     margin: 2.5em 1.5em;
+    transition: all 2s;
+    background-color: $background-col-one;
+    padding: 2em 0;
 }
 
 .home_gallery_options{
@@ -664,7 +669,53 @@ ul { list-style-type: none; }
     display: flex;
     flex-wrap: wrap;
 }
+.pageOne{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.pageTwo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pageThree{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pageFour{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pageFive{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #stable{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#abbatoir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#farm-crop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#feed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#medicine{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -675,12 +726,10 @@ ul { list-style-type: none; }
     width: 18em;
     margin: 1.3em;
 }
-.home_gallery_pht_1, .home_gallery_pht_2{
+.home_gallery_pht_1, #abbatoir, #farm-crop, #feed, #medicine, #stable, .pageTwo, .pageThree, .pageFour, .pageFive{
     display: none;
 }
-.pageTwo, .pageThree, .pageFour, .pageFive{
-    display: none;
-}
+
 .allWorks_buttons{
     width: 100%;
     display: flex;
@@ -727,7 +776,7 @@ ul { list-style-type: none; }
 
 .customer_review{
     margin: 2.5em 0.7em;
-    background-color: $gray;
+    background-color: $background-col-one;
     padding: 2em 0;
 }
 .cards-wrapper{
