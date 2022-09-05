@@ -1,15 +1,3 @@
-// navbar active state code
-
-$(".navbar .navbar-nav a").on("click", function () {
-  $("navbar .navbar-nav ").find("li.active").removeClass("active");
-  $(this).parent("li").addClass("active");
-});
-
-// sticky navbar function
-$(window).scroll(function () {
-  $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
-});
-
 // section home
 
 let vid = document.getElementById("myVideo");
@@ -141,4 +129,16 @@ fifth.addEventListener("click", () => {
   pageThree.style.display = "none";
   pageFour.style.display = "none";
   pageFive.style.display = "block";
+});
+
+// navbar active state code
+
+$(".navbar .navbar-nav a").on("click", function () {
+  $("navbar .navbar-nav ").find("li.active").removeClass("active");
+  $(this).parent("li").addClass("active");
+});
+
+// sticky navbar function
+$(window).scroll(function () {
+  $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
 });
