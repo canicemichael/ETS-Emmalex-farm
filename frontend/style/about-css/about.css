@@ -166,7 +166,7 @@ span {
 }
 .line {
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 1em;
   width: 4em;
   display: flex;
   justify-content: center;
@@ -234,12 +234,14 @@ span {
 .history {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
 }
 .history h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #5c3021;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .history-content {
   display: flex;
@@ -251,6 +253,9 @@ span {
 }
 .year1 {
   text-align: center;
+  box-shadow: 1px 1px 3px 2px #bc987e;
+  padding: 2em;
+  border-radius: 8px;
 }
 .underline-text {
   margin: 0 auto;
@@ -264,7 +269,7 @@ span {
   color: #5c3021;
   display: flex;
   flex-direction: column;
-  height: 7rem;
+  height: auto;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -274,6 +279,7 @@ span {
   display: flex;
   width: 100%;
   gap: 2em;
+  margin-top: 1em;
   padding: 0 6em;
 }
 .item-1 {
@@ -307,41 +313,11 @@ span {
   margin: 0 auto;
 }
 .premium h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
-.team {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 4em;
-  margin-bottom: 3em;
-}
-.team h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #5c3021;
-  text-align: center;
-  text-transform: capitalize;
-}
-.image1 {
-  /* height: 500px; */
-  width: 300px;
-}
-.image1 img {
-  width: 100%;
-}
-.team-images {
-  display: flex;
-  padding: 0 4em;
-  /* justify-content: space-between; */
-  gap: 2em;
-  margin: 0 auto;
-  margin-top: 3em;
-  width: 100%;
-}
+
 .lines {
   width: 3em;
   height: 0.2em;
@@ -358,6 +334,65 @@ span {
 }
 .bold {
   font-weight: bold;
+}
+.meet {
+  display: flex;
+  padding: 0 6em;
+  margin-top: 4em;
+  flex-direction: column;
+  margin-bottom: 4em;
+}
+.meet h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5c3021;
+}
+
+.card-component {
+  margin-top: 2em;
+  display: flex;
+  gap: 2em;
+  width: 100%;
+}
+.meet-card {
+  display: flex;
+  margin-top: 2em;
+  flex-direction: column;
+  padding: 2em;
+  /* height: 200px; */
+  /* width: 30%; */
+  width: 100%;
+  /* background-color: red; */
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px 2px #bc987e;
+  gap: 1em;
+}
+.name {
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.meet-card p {
+  text-align: center;
+}
+.meet-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: blue;
+  position: relative;
+  margin-top: -5em;
+}
+.meet-image img {
+  display: flex;
+  width: 100%;
+  /* border-radius: 50%; */
+  margin: 0 auto;
+  /* height: 100px; */
 }
 @media screen and (max-width: 992px) {
   .body {
@@ -423,6 +458,12 @@ span {
   .item-content {
     padding: 0 2em;
   }
+  .meet {
+    padding: 0 2em;
+  }
+  .history {
+    margin-top: 2em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -482,6 +523,9 @@ span {
   .text h4 {
     margin-top: 0.5em;
   }
+  .text h2 {
+    font-weight: bold;
+  }
 
   .text {
     margin-top: 3em;
@@ -492,8 +536,21 @@ span {
   .item-content {
     padding: 0 2em;
   }
+  .history {
+    margin-top: 2em;
+  }
   .history-content {
     padding: 0 2em;
+  }
+  .year1 {
+    padding: 1em;
+  }
+  .meet {
+    padding: 0 2em;
+  }
+  .meet-image {
+    width: 125px;
+    height: 125px;
   }
 }
 @media screen and (max-width: 568px) {
@@ -523,6 +580,7 @@ span {
     margin: 0 auto;
     text-align: center;
     padding: 0 2em;
+    font-weight: bold;
   }
   .text h4 {
     width: 100%;
@@ -619,41 +677,7 @@ span {
   .premium h2 {
     font-size: 1.8rem;
   }
-  .item-content {
-    flex-direction: column;
-    padding: 0 2em;
-  }
-  .item-1 {
-    width: 100%;
-  }
-  .team-images {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 2em;
-    /* background-color: red; */
-  }
-  .image1 {
-    /* height: 300px; */
-    max-width: 450px;
-    width: 100%;
-  }
-  .image1 p {
-    margin-top: 1em;
-    font-weight: bold;
-  }
-  .team {
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 3em;
-    width: 100%;
-    margin-top: 2em;
-  }
-  .team h2 {
-    margin-bottom: 1em;
-  }
+
   .sec-mission {
     flex-direction: column;
     width: 100%;
@@ -666,7 +690,7 @@ span {
     font-size: 1.7rem;
   }
   .history {
-    margin-top: 1em;
+    margin-top: 2.5em;
   }
   .history h2 {
     font-size: 2em;
@@ -676,6 +700,20 @@ span {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5em;
+  }
+  .year1 {
+    padding: 1em;
+  }
+  .meet {
+    padding: 0 2em;
+  }
+  .meet-image {
+    width: 125px;
+    height: 125px;
+  }
+  .card-component {
+    flex-direction: column;
+    gap: 2em;
   }
 }
 
@@ -705,6 +743,7 @@ span {
     margin: 0 auto;
     text-align: center;
     padding: 0 2em;
+    font-weight: bold;
   }
   .text h4 {
     width: 100%;
@@ -755,30 +794,7 @@ span {
   .item-1 {
     width: 100%;
   }
-  .team-images {
-    flex-direction: column;
-    gap: 1em;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 2em;
-  }
-  .image1 {
-    /* height: 300px; */
-    max-width: 380px;
-    width: 100%;
-  }
-  .image1 p {
-    margin-top: 1em;
-    font-weight: bold;
-  }
-  .team {
-    margin: 0 auto;
-    margin-bottom: 3em;
-    margin-top: 2em;
-  }
-  .team h2 {
-    margin-bottom: 1em;
-  }
+
   .sec-mission {
     flex-direction: column;
     width: 100%;
@@ -798,6 +814,9 @@ span {
   }
   .item-1 p {
     font-size: 1.3rem;
+  }
+  .year1 {
+    padding: 1.5em;
   }
   .year1 p {
     font-size: 1.3rem;
@@ -826,7 +845,7 @@ span {
   }
   .text h2 {
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     margin: 0 auto;
     text-align: center;
     padding: 0 1em;
@@ -883,12 +902,15 @@ span {
 
   .premium {
     text-align: center;
-    margin-top: 1em;
+    margin-top: 1.5em;
     width: 80%;
     font-size: 1.5rem;
+    display: flex;
   }
   .premium h2 {
     font-size: 1.9rem;
+    margin-bottom: 1em;
+    text-transform: uppercase;
   }
   .item-content {
     flex-direction: column;
@@ -905,30 +927,5 @@ span {
   }
   .item-1 a {
     font-size: 1rem;
-  }
-  .team-images {
-    flex-direction: column;
-    gap: 1em;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 2em;
-  }
-  .image1 {
-    /* height: 300px; */
-    margin: 0 auto;
-
-    width: 80%;
-  }
-  .image1 p {
-    margin-top: 1em;
-    font-weight: bold;
-  }
-  .team {
-    margin: 0 auto;
-    margin-bottom: 3em;
-    margin-top: 2em;
-  }
-  .team h2 {
-    margin-bottom: 1em;
   }
 }
