@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <script src="../scripts/booking.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="BreadCrumb">
+        <div>
+          <h2>Booking</h2>
+          <p>You Here! > Home > Booking</p>
+        </div>
+      </div>
+      <section className="BookMethod">
+        <div>
+          <div class="heroFlex Container">
+            <section class="EmailBooking">
+              <h3>Book Donkey Via Email</h3>
+              <form className="form" method="POST">
+                <div class="formItem desiredP">
+                  <label for="Product">Please select any of our Product</label>
+                  <div class="select">
+                    <label for="live_donkey"
+                      ><input
+                        type="checkbox"
+                        name="live_donkey"
+                        id="live_donkey"
+                        checked
+                      />
+                      Live Donkey</label
+                    >
+                    <label for="donkey_meat"
+                      ><input
+                        type="checkbox"
+                        name="donkey_meat"
+                        id="donkey_meat"
+                        checked
+                      />Donkey Meat</label
+                    >
+                    <label for="donkey_milk"
+                      ><input
+                        type="checkbox"
+                        name="donkey_milk"
+                        id="donkey_milk"
+                        checked
+                      />Donkey Milk</label
+                    >
+                  </div>
+                </div>
+                <div class="ProductDetails">
+                  <div class="BasicInfo">
+                    <div class="formItem">
+                      <label for="name">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Plese enter your name"
+                        required
+                      />
+                    </div>
+
+                    <div class="formItem">
+                      <label for="phone">Phone No.</label>
+                      <input
+                        type="tel"
+                        name="Phone"
+                        id="phone"
+                        placeholder="Please enter your Phone No"
+                        required
+                      />
+                    </div>
+                    <div class="formItem">
+                      <label for="address">Address</label>
+                      <input
+                        type="text"
+                        name="address"
+                        id="address"
+                        placeholder="Please enter the delivery address"
+                        required
+                      />
+                    </div>
+                    <div class="LiveDonkey">
+                      <div class="formItem">
+                        <label for="donkeySpecies">Live Donkey Species</label>
+                        <select name="" id="donkeySpecies">
+                          <option value="">Donkey 1</option>
+                          <option value="">Donkey 2</option>
+                          <option value="">Donkey 3</option>
+                        </select>
+                      </div>
+                      <div class="formItem qty">
+                        <label for="quantity"> Quantity of Live Donkey </label>
+                        <input
+                          type="number"
+                          name="quantity"
+                          id="quantity"
+                          placeholder="Please enter quantity of donkey"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="otherbooking">
+                    <div>
+                      <div class="formItem first">
+                        <label for="email">Email</label>
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          placeholder="Please enter your email"
+                          required
+                        />
+                      </div>
+                      <div class="DonkeyMeat">
+                        <div class="formItem">
+                          <label for="donkeySpecies">Donkey Meat Species</label>
+                          <select name="" id="donkeySpecies">
+                            <option value="">Donkey 1</option>
+                            <option value="">Donkey 2</option>
+                            <option value="">Donkey 3</option>
+                          </select>
+                        </div>
+                        <div class="formItem">
+                          <label for="Meatquantity">
+                            Kilogram of Donkey Meat
+                          </label>
+                          <input
+                            type="number"
+                            name="quantity"
+                            id="Meatquantity"
+                            placeholder="Please enter kilo of donkey meat needed"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="DonkeyMilk">
+                        <div class="formItem">
+                          <label for="donkeySpecies">Donkey Milk Species</label>
+                          <select name="" id="donkeySpecies">
+                            <option value="">Donkey 1</option>
+                            <option value="">Donkey 2</option>
+                            <option value="">Donkey 3</option>
+                          </select>
+                        </div>
+                        <div class="formItem">
+                          <label for="Milkquantity">
+                            Donkey Milk in Litres
+                          </label>
+                          <input
+                            type="number"
+                            name="quantity"
+                            id="Milkquantity"
+                            placeholder="Please enter liters of donkey milk needed"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <button type="submit">Book the Donkey</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+            <section class="map">
+              <section class="CardFlex">
+                <div class="mainDiv">
+                  <a href="tel:+2348037294665" class="Card">
+                    <img
+                      src="../assets/booking/phone-46-64.png"
+                      alt="phone"
+                      id="img-icon"
+                    />
+                    <div>
+                      <h5>Book Donkey Via Call</h5>
+                      <p>Click to Call</p>
+                    </div>
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=8037294665&text=i%20want%20to%20purchase%20donkey"
+                    class="Card"
+                  >
+                    <img
+                      src="../assets/booking/whatsapp-64.png"
+                      alt="whatsapp"
+                      id="img-icon"
+                    />
+                    <div>
+                      <h5>Book Donkey Via Whatsapp</h5>
+                      <p>Click to Message</p>
+                    </div>
+                  </a>
+                </div>
+              </section>
+              <h3>Visit Our Farm Via Google Map</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252160.1141516946!2d7.35292861451006!3d9.063600493685273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e03970e5541a5%3A0xa4d55811805acd57!2sAngwan%20Mai-nasara!5e0!3m2!1sen!2sng!4v1662407080754!5m2!1sen!2sng"
+                width="100%"
+                height="500"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footerr">
+        <div class="footer_top">
+          <div class="footer_top_one">
+            <div class="footer_top_one--1">
+              <h1 class="footerr_header">OUR ADDRESS</h1>
+              <div class="footer_top_one--1--content">
+                <i class="fa-solid fa-location-dot margin_btm_icon"></i>
+                <p>Angwan Mainasara, Uke, Karu L.G.A, Nasarawa State Nigeria</p>
+              </div>
+              <div class="footer_top_one--1--content">
+                <i class="fa-solid fa-phone margin_btm_icon"></i>
+                <p>08037294665</p>
+              </div>
+              <div class="footer_top_one--1--content">
+                <i class="fa-solid fa-envelope margin_btm_icon"></i>
+                <p>suchidebe@gmail.com</p>
+              </div>
+              <div class="footer_top_one--1--content last-item">
+                <i class="fa-solid fa-clock margin_btm_icon"></i>
+                <p>Time: 9:00am - 4:00pm</p>
+              </div>
+            </div>
+            <div class="footer_top_one--2">
+              <h1 class="footerr_header">USEFUL LINKS</h1>
+              <div class="footer_top_one--2--links">
+                <a class="useful_link" href="">Link 1</a>
+                <a class="useful_link" href="">Link 1</a>
+                <a class="useful_link" href="">Link 1</a>
+                <a class="useful_link" href="">Link 1</a>
+                <a class="useful_link" href="">Link 1</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_two">
+            <div class="footer_top_two--1">
+              <h1 class="footerr_header margin_top_small">OUR GALLERY</h1>
+              <div class="footer_gallery_container">
+                <div class="margin_bottom_small flex_justify_btw">
+                  <img
+                    class="footer_gallery"
+                    src="../../assets/landing_page/sbale6.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="footer_gallery"
+                    src="../../assets/landing_page/sbale6.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="footer_gallery"
+                    src="../../assets/landing_page/sbale6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="flex_justify_btw">
+                  <img
+                    class="footer_gallery"
+                    src="../../assets/landing_page/sbale6.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="footer_gallery"
+                    src="../../assets/landing_page/sbale6.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="footer_gallery"
+                    src="../../assets/landing_page/sbale6.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="footer_top_two--2 working_hours">
+              <h1 class="footerr_header margin_top_small">WORKING HOURS</h1>
+              <div class="flex_justify_btw divider_line">
+                <p>Monday-Friday</p>
+                <p>08:00 - 20:00</p>
+              </div>
+              <div class="flex_justify_btw divider_line">
+                <p>Saturday</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="flex_justify_btw divider_line">
+                <p>Sunday</p>
+                <p>09:00 - 18:00</p>
+              </div>
+              <div class="flex_justify_btw divider_line">
+                <p>Emergency:</p>
+                <p>phone number</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer_bottom">
+        <div>
+          Copyright <i class="fa-regular fa-copyright"></i> ETS all rights
+          reserved.
+        </div>
+        <div class="footer_bottom_links">
+          <a class="useful_link" href="">About</a>
+          <a class="useful_link" href="">Service</a>
+          <a class="useful_link" href="">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
