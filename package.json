@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/canicemichael/ETS-Emmalex-farm/issues"
   },
-  "homepage": "https://github.com/canicemichael/ETS-Emmalex-farm#readme"
+  "homepage": "https://github.com/canicemichael/ETS-Emmalex-farm#readme",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
 }

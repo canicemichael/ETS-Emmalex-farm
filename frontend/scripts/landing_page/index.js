@@ -139,6 +139,8 @@ $(".navbar .navbar-nav a").on("click", function () {
 });
 
 // sticky navbar function
-$(window).scroll(function () {
+$(window).scrollTop(function () {
   $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
 });
+
+/////
