@@ -20,15 +20,24 @@
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     background-color: $primary-col-4;    
 }
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
+.dropdown .dropdown-menu{
+    display: none;
+}
+.dropdown:hover .dropdown-toggle::after{
+    border-top: 0;
+    border-bottom: .3em solid;
+}
+
+
+
 .dropdown-item{
     color: $primary-col-1;
 }
-// a.nav-link.contact-us{
-//     background-color: $primary-col-2;
-//     border-radius: 15px;
-//     font-weight: 600;
-//     margin: 0.4em auto;
-// }
 .brandLogo{
     font-size: 2.5em;
 }
@@ -279,6 +288,15 @@
 
 
 }
+@media screen and (min-width: 992px){
+    .dropdown:hover .dropdown-menu{
+        display: block;
+        margin-top: 0;
+    }
+    .dropdown .dropdown-menu{
+        display: none;
+    }
+}
 @media screen and (max-width: 986px) {
     a.nav-link.contact-us{
         background-color: $primary-col-2;
@@ -290,6 +308,10 @@
     }
     .navbar-brand{
         padding-left: 0.7em;
+    }
+    .dropdown-toggle.show::after{
+        border-top: 0;
+        border-bottom: .3em solid;
     }
 }
 
