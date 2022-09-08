@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,32 @@
 }
 body {
   /* width: 100%; */
+  font-family: 'Quicksand', sans-serif;
 }
-
+p,
+h2,
+h3,
+h4,
+h5,
+a {
+  color: #5c3021;
+  font-family: 'Quicksand', sans-serif;
+  /* color: #813b0d; */
+}
+p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+.bold {
+  font-size: 1.2rem;
+}
 .context {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: #ffe4c3;
+  background-color: #cc9444;
+  color: #813b0d;
+  /* background-color: #ffe4c3; */
 }
 .logo-img {
   display: flex;
@@ -24,7 +44,7 @@ body {
 }
 .about {
   background-color: #bc987e;
-  color: #5c3021;
+  /* color: #5c3021; */
   height: 8em;
   display: flex;
   flex-direction: column;
@@ -35,6 +55,7 @@ body {
 .about h2 {
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
 }
 span {
   font-size: 1rem;
@@ -44,15 +65,15 @@ span {
 .about a {
   text-transform: uppercase;
   text-decoration: none;
-  color: #5c3021;
   font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
 }
 .about .white {
   color: #fff;
 }
 .content {
-  color: #5c3021;
-  background-color: #ffe4c3;
+  /* color: #5c3021; */
+  /* background-color: #ffe4c3; */
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -72,44 +93,64 @@ span {
 }
 .text h2 {
   font-size: 2.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
 }
 .text h4 {
   margin-top: 1em;
   width: 50%;
   text-align: center;
   font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
 }
 .section-image {
   padding: 0 6em;
   display: flex;
   gap: 1.5em;
-  margin-top: 2em;
+  margin-top: 3em;
+  /* background-color: red; */
 }
 .item-image {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: flex-start; */
   width: 50%;
 }
 .item-image img {
   width: 100%;
 }
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
 .paragraph {
-  margin-bottom: 5em;
-  width: 90%;
+  margin-bottom: 2em;
+  width: 100%;
+  line-height: 1.6;
+
+  /* text-align: center; */
 }
 .text-paragraph {
-  width: 90%;
+  line-height: 1.6;
+  width: 100%;
 }
 .item {
   width: 50%;
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
   line-height: 23px;
+  padding: 1em;
+  /* background-color: blue; */
 }
 .read {
   margin-top: 0.5em;
   text-decoration: none;
   font-size: 1.5rem;
-  color: #5c3021;
+  /* color: #5c3021; */
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -117,7 +158,7 @@ span {
   width: 3em;
   background-color: #5c3021;
   height: 0.2em;
-  margin-top: 3.5em;
+  margin-top: 2em;
 }
 .background-image {
   position: relative;
@@ -128,42 +169,7 @@ span {
   width: 100%;
   height: 100%;
 }
-.missions {
-  background-color: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: 0;
-  height: 100%;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  padding: 0 6em;
-  gap: 2em;
-}
-.mission-group {
-  position: absolute;
-  display: flex;
-}
-.mission {
-  width: 100%;
-  padding: 0 2em;
-}
-.mission h3 {
-  color: #5c3021;
-  font-size: 3rem;
-  text-align: center;
-  width: 90%;
-}
-.mission p {
-  width: 100%;
-  color: #5c3021;
-  text-align: center;
-}
-.mission h5 {
-  color: #5c3021;
-  width: 90%;
-  text-align: center;
-}
+
 .line {
   margin: 0 auto;
   margin-top: 1em;
@@ -177,18 +183,7 @@ span {
   margin-right: auto;
   margin-bottom: 1em;
 }
-.mission a {
-  display: flex;
-  text-decoration: none;
-  text-align: center;
-  /* margin-right: 2em; */
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #5c3021;
-}
+
 .line-up {
   margin: 0 auto;
   width: 2em;
@@ -214,32 +209,34 @@ span {
 }
 
 .mission1 {
-  width: 40%;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2em;
 }
 .mission1 h2 {
-  color: #5c3021;
+  /* color: #5c3021; */
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 .mission1 p {
   text-align: center;
   width: 100%;
+  padding: 0 2em;
+  /* background-color: red; */
 }
 /* design for mission */
 /* Design for history */
 .history {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 .history h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #5c3021;
+  /* color: #5c3021; */
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -249,13 +246,19 @@ span {
   gap: 2em;
 }
 .year1 {
+  background-color: #5c3021;
   margin-top: 0.5em;
 }
 .year1 {
   text-align: center;
-  box-shadow: 1px 1px 3px 2px #bc987e;
+  /* box-shadow: 1px 1px 3px 2px #bc987e; */
   padding: 2em;
   border-radius: 8px;
+}
+.year1 p {
+  color: #fff;
+  padding: 2em 4em;
+  text-align: center;
 }
 .underline-text {
   margin: 0 auto;
@@ -266,7 +269,7 @@ span {
   margin-bottom: 0.5em;
 }
 .premium {
-  color: #5c3021;
+  /* color: #5c3021; */
   display: flex;
   flex-direction: column;
   height: auto;
@@ -285,11 +288,12 @@ span {
 .item-1 {
   display: flex;
   flex-direction: column;
+
   width: 50%;
 }
 .item-1 p {
   margin-top: 1.7em;
-  color: #5c3021;
+  /* color: #5c3021; */
 }
 .item-1 img {
   width: 100%;
@@ -308,7 +312,7 @@ span {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: #5c3021;
+  /* color: #5c3021; */
   text-decoration: none;
   margin: 0 auto;
 }
@@ -347,23 +351,27 @@ span {
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #5c3021;
+  /* color: #5c3021; */
 }
 
 .card-component {
   margin-top: 2em;
-  display: flex;
-  gap: 2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* background-color: red; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
   width: 100%;
 }
 .meet-card {
-  display: flex;
-  margin-top: 2em;
-  flex-direction: column;
-  padding: 2em;
+  display: grid;
+  margin-top: 3em;
+  /* flex-direction: column; */
+  padding: 2em 1em;
   /* height: 200px; */
   /* width: 30%; */
-  width: 100%;
+  /* width: 70%; */
   /* background-color: red; */
   border-radius: 8px;
   box-shadow: 1px 1px 3px 2px #bc987e;
@@ -383,9 +391,9 @@ span {
   border-radius: 50%;
   margin: 0 auto;
   overflow: hidden;
-  background-color: blue;
+
   position: relative;
-  margin-top: -5em;
+  margin-top: -6em;
 }
 .meet-image img {
   display: flex;
@@ -397,6 +405,9 @@ span {
 @media screen and (max-width: 992px) {
   .body {
     width: 100%;
+  }
+  .text h4 {
+    width: 80%;
   }
   .context {
     width: 100%;
@@ -429,7 +440,7 @@ span {
     margin-bottom: 1em;
   }
   .text-paragraph {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     width: 100%;
   }
   .underline {
@@ -453,7 +464,7 @@ span {
     height: 12em;
   }
   .mission1 h2 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
   .item-content {
     padding: 0 2em;
@@ -470,6 +481,9 @@ span {
   .body {
     width: 100%;
   }
+  p {
+    font-size: 0.9rem;
+  }
   .context {
     width: 100%;
   }
@@ -477,15 +491,23 @@ span {
     width: 100%;
     display: flex;
   }
+  .text h4 {
+    width: 80%;
+  }
   .section-image {
     display: flex;
     width: 100%;
     margin-top: 2em;
     gap: 1.5em;
+    /* background-color: red; */
     padding: 0 2em;
   }
   .item-image {
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     /* height: 800px; */
   }
   .item-image img {
@@ -501,7 +523,7 @@ span {
     margin-bottom: 1em;
   }
   .text-paragraph {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     width: 100%;
   }
   .underline {
@@ -518,7 +540,10 @@ span {
     padding: 1.5em 1em;
   }
   .mission1 h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+  .mission1 p {
+    padding: 0 1em;
   }
   .text h4 {
     margin-top: 0.5em;
@@ -553,14 +578,16 @@ span {
     height: 125px;
   }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 580px) {
   body {
     width: 100%;
   }
   .context {
     width: 100%;
   }
-
+  p {
+    font-size: 1.3rem;
+  }
   .logo-img {
     height: 140px;
   }
@@ -606,13 +633,15 @@ span {
     width: 100%;
   }
   .item-1 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .paragraph {
     margin-bottom: 2em;
+    font-size: 1.2rem;
     width: 100%;
   }
   .text-paragraph {
+    font-size: 1.2rem;
     width: 100%;
   }
   .background-image {
@@ -641,33 +670,7 @@ span {
     width: 100%;
     padding: 0;
   }
-  .mission p {
-    width: 80%;
-    padding: 0 1em;
-    margin: 0 auto;
-    font-size: 0.9rem;
-  }
-  .mission h5 {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 0.9rem;
-  }
-  .mission h3 {
-    width: 100%;
-    font-size: 2rem;
-  }
-  .mission a {
-    width: 100%;
-    font-size: 1rem;
-  }
-  .mission-group {
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3em;
-  }
+
   .premium {
     text-align: center;
     margin-top: 2em;
@@ -689,6 +692,9 @@ span {
   .mission1 h2 {
     font-size: 1.7rem;
   }
+  .mission1 p {
+    padding: 0 1em;
+  }
   .history {
     margin-top: 2.5em;
   }
@@ -704,6 +710,9 @@ span {
   .year1 {
     padding: 1em;
   }
+  .year1 p {
+    padding: 1em 1em;
+  }
   .meet {
     padding: 0 2em;
   }
@@ -712,8 +721,8 @@ span {
     height: 125px;
   }
   .card-component {
-    flex-direction: column;
-    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 2em; */
   }
 }
 
@@ -784,8 +793,9 @@ span {
   .premium {
     text-align: center;
     margin-top: 2em;
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
+    padding: 0 1em;
   }
   .item-content {
     flex-direction: column;
@@ -808,6 +818,7 @@ span {
   }
   .mission1 p {
     font-size: 1.3rem;
+    padding: 0 0.5em;
   }
   .bold {
     font-size: 1.3rem;
@@ -820,9 +831,22 @@ span {
   }
   .year1 p {
     font-size: 1.3rem;
+    padding: 1em 0.5em;
   }
   .history-content {
     gap: 1em;
+  }
+  .meet {
+    /* padding: 0 3em; */
+  }
+  .card-component {
+    grid-template-columns: 1fr;
+    background-color: #cc9444;
+    width: 80%;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    /* gap: 2em; */
   }
 }
 
@@ -903,7 +927,7 @@ span {
   .premium {
     text-align: center;
     margin-top: 1.5em;
-    width: 80%;
+    width: 100%;
     font-size: 1.5rem;
     display: flex;
   }
