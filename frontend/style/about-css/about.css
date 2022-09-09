@@ -29,19 +29,23 @@ p {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: #cc9444;
+  /* background-color: #cc9444; */
   color: #813b0d;
   /* background-color: #ffe4c3; */
 }
 .logo-img {
-  display: flex;
+  /* display: flex; */
   width: 100%;
+  position: relative;
   /* height: 400px; */
   /* max-height: 60vh; */
+  background-image: url(../../assets/banner.jpg);
 }
-.logo-img img {
+
+/* .logo-img img {
   width: 100%;
-}
+} */
+
 .about {
   background-color: #bc987e;
   /* color: #5c3021; */
@@ -86,6 +90,7 @@ span {
 .text {
   display: flex;
   flex-direction: column;
+  height: auto;
   align-items: center;
   /* height: 10em; */
   width: 100%;
@@ -103,6 +108,7 @@ span {
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.5rem;
+  line-height: 1.7;
 }
 .section-image {
   padding: 0 6em;
@@ -192,20 +198,20 @@ p {
   align-items: center;
   background-color: #5c3021;
   height: 0.1em;
-  margin-bottom: 0.2em;
+  margin-top: 0.5em;
 }
 /* design for mission */
 .sec-mission {
   display: flex;
-  background-image: url('../../assets/donkey.jpg');
+  /* background-image: url('../../assets/donkey.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   width: 100%;
   margin: 0 auto;
   /* padding: 0 2em; */
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #efe0bb;
 }
 
 .mission1 {
@@ -242,7 +248,7 @@ p {
 }
 .history-content {
   display: flex;
-  padding: 0 6em;
+  /* padding: 0 6em; */
   gap: 2em;
 }
 .year1 {
@@ -253,7 +259,7 @@ p {
   text-align: center;
   /* box-shadow: 1px 1px 3px 2px #bc987e; */
   padding: 2em;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 .year1 p {
   color: #fff;
@@ -266,7 +272,7 @@ p {
   background-color: #5c3021;
   width: 4em;
   /* margin-top: 1em; */
-  margin-bottom: 0.5em;
+  margin-top: 1em;
 }
 .premium {
   /* color: #5c3021; */
@@ -276,12 +282,12 @@ p {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 .item-content {
   display: flex;
   width: 100%;
-  gap: 2em;
+  gap: 3rem;
   margin-top: 1em;
   padding: 0 6em;
 }
@@ -297,7 +303,7 @@ p {
 }
 .item-1 img {
   width: 100%;
-  height: 200px;
+  /* height: auto; */
 }
 .line-straight {
   height: 0.2em;
@@ -309,12 +315,25 @@ p {
   margin-bottom: 0.5em;
 }
 .item-1 a {
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   text-transform: uppercase;
-  font-size: 1.5rem;
+  padding: 6px;
+  background-color: #5c3021;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.2rem;
   /* color: #5c3021; */
   text-decoration: none;
-  margin: 0 auto;
+  /* width: 40%; */
+  margin-top: 1em;
+  width: 40%;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+.item-1 a:hover {
+  background-color: #fff;
+  color: #5c3021;
+  border: 2px solid #5c3021;
 }
 .premium h2 {
   font-size: 2rem;
@@ -356,13 +375,14 @@ p {
 
 .card-component {
   margin-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   /* background-color: red; */
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
   gap: 3em;
-  width: 100%;
+  /* width: 100%; */
 }
 .meet-card {
   display: grid;
@@ -374,20 +394,21 @@ p {
   /* width: 70%; */
   /* background-color: red; */
   border-radius: 8px;
-  box-shadow: 1px 1px 3px 2px #bc987e;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
   gap: 1em;
 }
-.name {
+.meet-card .name {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
 }
 .meet-card p {
   text-align: center;
+  font-size: 0.8rem;
 }
 .meet-image {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: 0 auto;
   overflow: hidden;
@@ -461,7 +482,7 @@ p {
     margin-top: 3em;
     align-items: center;
     margin-top: 1em;
-    height: 12em;
+    /* height: auto */
   }
   .mission1 h2 {
     font-size: 1.7rem;
@@ -565,7 +586,7 @@ p {
     margin-top: 2em;
   }
   .history-content {
-    padding: 0 2em;
+    /* padding: 0 2em; */
   }
   .year1 {
     padding: 1em;
@@ -573,10 +594,10 @@ p {
   .meet {
     padding: 0 2em;
   }
-  .meet-image {
+  /* .meet-image {
     width: 125px;
     height: 125px;
-  }
+  } */
 }
 @media screen and (max-width: 580px) {
   body {
@@ -674,7 +695,7 @@ p {
   .premium {
     text-align: center;
     margin-top: 2em;
-    width: 70%;
+    /* width: 80%; */
     font-size: 1.5rem;
   }
   .premium h2 {
@@ -702,7 +723,7 @@ p {
     font-size: 2em;
   }
   .history-content {
-    padding: 0 2em;
+    /* padding: 0 2em; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5em;
@@ -716,12 +737,12 @@ p {
   .meet {
     padding: 0 2em;
   }
-  .meet-image {
+  /* .meet-image {
     width: 125px;
     height: 125px;
-  }
+  } */
   .card-component {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     /* gap: 2em; */
   }
 }
@@ -793,7 +814,7 @@ p {
   .premium {
     text-align: center;
     margin-top: 2em;
-    width: 100%;
+    /* width: 100%; */
     font-size: 1.5rem;
     padding: 0 1em;
   }
@@ -841,8 +862,8 @@ p {
   }
   .card-component {
     grid-template-columns: 1fr;
-    background-color: #cc9444;
-    width: 80%;
+    /* background-color: #cc9444; */
+    /* width: 80%; */
     /* margin: 0 auto; */
     margin-left: auto;
     margin-right: auto;
@@ -911,7 +932,7 @@ p {
     margin-top: 1em;
     width: 100%;
     height: 900px;
-    background-color: red;
+    /* background-color: red; */
   }
   .background-image img {
     width: 100%;
@@ -927,14 +948,15 @@ p {
   .premium {
     text-align: center;
     margin-top: 1.5em;
-    width: 100%;
+    /* width: 100%; */
     font-size: 1.5rem;
     display: flex;
   }
   .premium h2 {
     font-size: 1.9rem;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     text-transform: uppercase;
+    /* width: 100%; */
   }
   .item-content {
     flex-direction: column;
