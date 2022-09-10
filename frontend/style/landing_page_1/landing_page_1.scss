@@ -58,7 +58,7 @@ video {
     font-weight: 600;
 }
 .welcome_about{
-    background-color: $primary-col-1;
+    background-color: $primary-col-5;
     color: $primary-col-2;
     border: transparent;
 }
@@ -68,12 +68,12 @@ video {
 }
 .welcome_service{
     background-color: $primary-col-2;
-    color: $primary-col-1;
+    color: $primary-col-5;
     border: transparent;
     margin-left: 1em;
 }
 .welcome_service:hover{
-    background-color: $primary-col-1;
+    background-color: $primary-col-5;
     color: $primary-col-2;
 }
 @media screen and (min-width: 1442px){
@@ -398,12 +398,15 @@ video {
 .our_about_us_header{    
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-col-one;
+    margin-bottom: -2em;
 }
 .our_about_us_header_1{
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 600;
-    color: $primary-col-1;
+    color: $primary-col-8;
     margin-bottom: 0.8em;
 }
 .our_about_us_desc{
@@ -435,8 +438,9 @@ ul { list-style-type: none; }
     border-radius: 5px;
     background-color: $primary-col-4;
     border: 0px;
-    color: $primary-col-3;
+    color: $primary-col-2;
     padding: 1em 1.5em;
+    font-weight: 400;
 }
 
 @media screen and (min-width: 1442.1px){
@@ -571,7 +575,7 @@ ul { list-style-type: none; }
 .our_services_desc{
     text-align: center;
     margin-bottom: 2em;
-    color: $primary-col-1;
+    color: $primary-col-3;
     font-size: 1.6em;
     font-weight: 600;
 }
@@ -596,6 +600,7 @@ ul { list-style-type: none; }
     font-size: 2em;
     border-radius: 50%;
     background-color: $primary-col-4;
+    color: $primary-col-2;
 }
 .our_services_card_head{
     font-size: 1.4em;
@@ -653,10 +658,13 @@ ul { list-style-type: none; }
 // supporters
 
 .supporters{
-    padding: 2.2em 0;
+    padding: 2.2em 1em;
     height: auto;
     width: 100%;
     background-color: $primary-col-4;
+    color: $primary-col-2;
+    display: flex;
+    justify-content: space-between;
 }
 .supporters_cont{
     display: flex;
@@ -674,6 +682,7 @@ ul { list-style-type: none; }
 }
 .supporters_name{
     font-weight: 600;
+    font-size: 0.7em;
 }
 
 //////////////////////////////////
@@ -701,7 +710,7 @@ ul { list-style-type: none; }
     margin-bottom: 0.8em;
 }
 .home_gallery_btn:hover{
-    background-color: $primary-col-1;
+    background-color: $primary-col-5;
     color: $primary-col-2;
 }
 
@@ -786,7 +795,7 @@ ul { list-style-type: none; }
 .allWorks_buttons button{
     margin: 0 1em;
     border-radius: 5px;
-    background-color: $primary-col-1;
+    background-color: $primary-col-5;
     color: $primary-col-2;
 }
 
