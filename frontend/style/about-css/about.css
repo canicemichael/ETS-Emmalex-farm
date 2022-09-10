@@ -19,7 +19,7 @@ a {
   /* color: #813b0d; */
 }
 p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 .bold {
@@ -37,7 +37,7 @@ p {
   width: 100%;
   /* background-color: red; */
   height: 400px;
-  background-image: url('../../assets/donkey.jpg');
+  background-image: url('../../assets/donkeys-banner.webp');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ p {
 }
 .text h4 {
   margin-top: 1em;
-  width: 50%;
+  width: 80%;
   text-align: center;
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
@@ -385,7 +385,8 @@ p {
   /* flex-direction: column; */
   padding: 2em 1em;
   /* height: 200px; */
-  /* width: 30%; */
+  height: 170px;
+  width: 200px;
   /* width: 70%; */
   /* background-color: red; */
   border-radius: 8px;
@@ -394,8 +395,13 @@ p {
 }
 .meet-card .name {
   font-weight: bold;
-  font-size: 1.2rem;
-  text-transform: capitalize;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.meet-card .office {
+  font-size: 0.8rem;
+  margin-top: 0.5em;
+  text-transform: uppercase;
 }
 .meet-card p {
   text-align: center;
@@ -421,6 +427,9 @@ p {
 @media screen and (max-width: 992px) {
   .body {
     width: 100%;
+  }
+  p {
+    font-size: 1rem;
   }
   .text h4 {
     width: 80%;
@@ -498,7 +507,7 @@ p {
     width: 100%;
   }
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .context {
     width: 100%;
@@ -602,7 +611,7 @@ p {
     width: 100%;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .logo-img {
     height: 140px;
@@ -833,20 +842,20 @@ p {
     font-size: 1.6rem;
   }
   .mission1 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0 0.5em;
   }
   .bold {
     font-size: 1.3rem;
   }
   .item-1 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .year1 {
     padding: 1.5em;
   }
   .year1 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1em 0.5em;
   }
   .history-content {
@@ -869,6 +878,9 @@ p {
 @media screen and (max-width: 375px) {
   body {
     width: 100%;
+  }
+  p {
+    font-size: 1.1rem;
   }
   .context {
     width: 100%;
