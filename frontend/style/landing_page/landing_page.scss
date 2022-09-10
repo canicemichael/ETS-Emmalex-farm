@@ -75,6 +75,12 @@
         padding-left: 1.8em;
     }
 }
+@media screen and (min-width: 425px) and (max-width: 768px){
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
 @media screen and (min-width: 0px) and (max-width: 425px){
     .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
         padding-right: 0;
@@ -111,6 +117,14 @@
 }
 .brandLogo{
     font-size: 2.5em;
+}
+.brandLogo:hover{
+    font-size: 2.5em;
+    color: $primary-col-2;
+}
+.fa-globe:before {
+    content: "\f0ac";
+    color: $primary-col-2
 }
 
 .quick-info--1{
@@ -580,10 +594,12 @@
         padding: 1.2em;
         text-align: center;
     }
-    // .quick-info--1{
-    //     display: flex;
-    //     justify-content: space-between;
-    // }
+    .quick-info--1{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0.5em;
+        margin-right: 0.5em;
+    }
     .quick-info--2{
         display: flex;
         justify-content: space-around;
@@ -707,14 +723,14 @@
     .quick-info--1{
         display: flex;
         flex-direction: column;
+        margin: 0 0;
     }
     .quick-info--2{
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin-top: 0.6em;
-        margin-right: 8em;
-        margin-left: 8em;
+        margin: 0.6em 0;
     }
     // div.container-fluid{
     //     background-color: $primary-col-4;
