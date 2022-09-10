@@ -235,8 +235,12 @@ video {
 .donkey_section--img{
     height: 24em;
     width: 17em;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
     border-radius: 3px;
-    transition: .5s;
+    transition: 3.5s;
 }
 
 .donkey_sections--1{
@@ -252,12 +256,46 @@ video {
 }
 .donkey_sections_cont{
     height: 24em;
-    // margin: 50px;
     width: 17em;
-    border: 1px solid $primary-col-1;
     margin-bottom: 1em;
     overflow: hidden;
     margin: .5em .5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
+
+    &:hover .intro {
+        opacity: 1;
+        transform: translateY(190px);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background: linear-gradient(to bottom, rgba(214, 8, 8, 0.2), rgba(52, 14, 14, 0.9));
+        transition: 1.5s all;
+        opacity: 0;
+    }
+
+    .intro {
+        position: relative;
+        z-index: 3;
+        color: white;
+        transform: translateY(300px);
+        opacity: 0;
+        transition: 0.5s all;
+        padding: 1em;
+        // @include large {
+        //     transform: translateY(500px);
+        // }
+    }
 }
 .donkey_sections_cont_2{
     height: 24em;
