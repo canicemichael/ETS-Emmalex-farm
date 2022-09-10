@@ -11,7 +11,7 @@
   --neutral-color: #bc987e;
 }
 body {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   font-family: 'Quicksand', sans-serif;
 }
 h1,
@@ -22,15 +22,24 @@ h5,
 p {
   font-family: 'Quicksand', sans-serif;
 }
+p {
+  line-height: 1.7;
+  padding: 0 1em;
+}
 .banner {
   display: flex;
   flex-direction: column;
 }
 .page-banner {
+  background-image: url(../../assets/slaughter-house/donkeys-banner.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   position: relative;
   width: 100%;
-  height: auto;
+
+  height: 300px;
 }
 .banner-text {
   position: absolute;
@@ -86,6 +95,7 @@ a.white {
 }
 .description {
   display: flex;
+  padding-block: 2rem;
   flex-direction: column;
   padding: 0 6em;
 }
@@ -99,7 +109,7 @@ a.white {
   background-color: var(--text-color);
   width: 4em;
   margin: 0 auto;
-  margin-bottom: 0.2em;
+  margin-top: 1em;
 }
 .text h2 {
   text-align: center;
@@ -109,7 +119,14 @@ a.white {
   color: #5c3021;
 }
 .text h4 {
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 100%;
   text-align: center;
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
 }
 .technique {
   margin-top: 2em;
@@ -172,15 +189,18 @@ img.photo {
   height: 300px;
 }
 .storage {
-  margin-top: 6em;
+  padding-block: 2rem;
+  /* margin-top: 6em; */
   padding: 0 6em;
 }
 /* visit */
 .visit {
-  margin-top: 5em;
+  /* margin-top: 5em; */
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   padding: 0 6em;
+  padding-block: 2rem;
 }
 .visit-text {
   display: flex;
@@ -195,18 +215,37 @@ img.photo {
 }
 .section-visit {
   display: flex;
-
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
   gap: 2.5em;
   /* width: 100%; */
   margin-top: 1em;
+}
+.icon {
+  display: flex;
+  gap: 1em;
+  /* background-color: red; */
+}
+.icon h3 {
+  text-align: left;
+}
+.icon img {
+  width: 15%;
+  /* background-color: #5c3021; */
+  color: #fff;
 }
 .reason1 {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  padding: 2em 1em;
-  box-shadow: 1px 1px 3px 2px #bc987e;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  height: 300px;
+  width: 280px;
 }
 .reason1 h3 {
   font-size: 1.3rem;
@@ -222,7 +261,8 @@ img.photo {
   display: flex;
   flex-direction: column;
   padding: 0 6em;
-  margin-top: 5em;
+  /* margin-top: 5em; */
+  padding-block: 2rem;
   margin-bottom: 5em;
 }
 .gallery h2 {
@@ -247,20 +287,37 @@ img.photo {
   .banner-img {
     height: 200px;
   }
+  .text h4 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
   .description {
     padding: 0 3em;
+    padding-block: 2rem;
   }
   .storage {
     padding: 0 3em;
+    padding-block: 2rem;
   }
   .visit {
     padding: 0 3em;
+    padding-block: 2rem;
+  }
+  .section-visit {
+    flex-wrap: wrap;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .reason1 {
     padding: 1em;
   }
   .gallery {
     padding: 0 2em;
+    padding-block: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -269,23 +326,42 @@ img.photo {
   }
   .description {
     padding: 0 2em;
+    padding-block: 2rem;
+  }
+  .text h4 {
+    width: 100%;
+    font-size: 1.2rem;
   }
   .storage {
     padding: 0 2em;
+    padding-block: 2rem;
   }
   .visit {
     padding: 0 2em;
+    padding-block: 2rem;
   }
   .reason1 {
     padding: 1em;
   }
   .gallery {
     padding: 0 2em;
+    padding-block: 2rem;
   }
   .banner-text {
     position: absolute;
     font-size: 2rem;
     top: 1.5em;
+  }
+  .section-visit {
+    flex-wrap: wrap;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon img {
   }
 }
 @media screen and (max-width: 568px) {
@@ -300,9 +376,14 @@ img.photo {
   }
   .description {
     padding: 0 2em;
+    padding-block: 2rem;
   }
   .text h2 {
     font-size: 1.7rem;
+  }
+  .text h4 {
+    width: 100%;
+    font-size: 1rem;
   }
   .first-item {
     grid-template-columns: 1fr;
@@ -312,9 +393,11 @@ img.photo {
   }
   .storage {
     padding: 0 2em;
+    padding-block: 2rem;
   }
   .visit {
     padding: 0 2em;
+    padding: 2rem;
   }
   .visit-text h2 {
     font-size: 1.7rem;
@@ -328,6 +411,7 @@ img.photo {
   }
   .gallery {
     padding: 0 2em;
+    padding-block: 2rem;
   }
   .gallery h2 {
     font-size: 1.7rem;
@@ -362,6 +446,10 @@ img.photo {
   .text h2 {
     font-size: 1.7rem;
   }
+  .text h4 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
   .first-item {
     grid-template-columns: 1fr;
   }
@@ -370,9 +458,11 @@ img.photo {
   }
   .storage {
     padding: 0 2em;
+    padding-block: 1rem;
   }
   .visit {
     padding: 0 2em;
+    padding-block: 1rem;
   }
   .visit-text h2 {
     font-size: 1.7rem;
@@ -383,6 +473,8 @@ img.photo {
   .reason1 {
     margin: 0 auto;
     padding: 1em;
+    height: 300px;
+    width: 250px;
   }
   .gallery {
     padding: 0 2em;
@@ -420,6 +512,10 @@ img.photo {
   .text h2 {
     font-size: 1.7rem;
   }
+  .text h4 {
+    width: 100%;
+    font-size: 1rem;
+  }
   .first-item {
     grid-template-columns: 1fr;
   }
@@ -428,9 +524,11 @@ img.photo {
   }
   .storage {
     padding: 0 2em;
+    padding-block: 1rem;
   }
   .visit {
     padding: 0 2em;
+    padding-block: 1rem;
   }
   .visit-text h2 {
     font-size: 1.7rem;
@@ -441,9 +539,12 @@ img.photo {
   .reason1 {
     margin: 0 auto;
     padding: 1em;
+    width: 250px;
+    height: 300px;
   }
   .gallery {
     padding: 0 2em;
+    padding-block: 1rem;
   }
   .gallery h2 {
     font-size: 1.7rem;
