@@ -917,6 +917,7 @@ ul { list-style-type: none; }
     display: flex;
     justify-content: space-around;
     padding: 0 2em;
+    gap: 1em;
 }
 .card{
     width: calc(100%/3);
@@ -929,6 +930,9 @@ ul { list-style-type: none; }
 .carousel-control-next-icon{
     background-color: $primary-col-3;
     border-radius: 50%;
+}
+.caro_shadow{
+    box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06)
 }
 
 @media screen and (min-width: 1024.1px) and (max-width: 1442px){}
