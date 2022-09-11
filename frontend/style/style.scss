@@ -1,6 +1,8 @@
 @import "./reset";
 @import "./variable";
 @import "./footer&nav";
+@import "./nav";
+
 h2 {
   color: $textColor;
   font-size: clamp(1rem, 3.5vw, 1.2rem);
@@ -14,7 +16,7 @@ h2 {
   }
 }
 h3 {
-  color: $textColor;
+  color: $bgColor;
 }
 label {
   color: $textColor;
@@ -84,7 +86,7 @@ a {
     border-radius: 8px;
     border: none;
     color: white;
-    background-color: $textColor;
+    background-color: $bgColor;
     margin-top: 2rem;
     &:hover {
       background-color: transparent;
@@ -98,9 +100,13 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
 
   @include medium {
     width: 45%;
+  }
+  @include large {
+    margin: 0;
   }
 }
 input,
@@ -152,7 +158,7 @@ label {
   gap: 1rem;
   border-radius: 8px;
   background-color: white;
-  box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
+  box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
   padding: 2rem 1rem;
   @include medium {
   }
@@ -194,7 +200,7 @@ label {
   }
 }
 .EmailBooking {
-  border-top: 3px solid $textColor;
+  border-top: 3px solid $bgColor;
   box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
   padding: 4rem;
   @include medium {
@@ -205,6 +211,7 @@ label {
 
 .BreadCrumb {
   background-image: url("../assets/service/stable5.webp");
+  // background-repeat: no-repeat;
   min-height: 150px;
   text-align: center;
   display: flex;
@@ -213,7 +220,11 @@ label {
   justify-content: center;
   width: 100%;
   position: relative;
-  object-fit: contain;
+  object-fit: fill;
+  z-index: -1;
+  @include large {
+    min-height: 300px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -258,9 +269,9 @@ label {
     }
     &:hover .Card-info {
       opacity: 1;
-      transform: translateY(190px);
+      transform: translateY(150px);
       @include large {
-        transform: translateY(300px);
+        transform: translateY(270px);
       }
     }
     &::before {
@@ -291,6 +302,14 @@ label {
       opacity: 0;
       transition: 0.5s all;
       padding: 1rem;
+      h4 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        @include medium {
+          font-size: 1.3rem;
+        }
+      }
       @include large {
         transform: translateY(500px);
       }
@@ -302,7 +321,10 @@ label {
   margin-bottom: 2rem;
   h5 {
     text-align: center;
-    color: $dark-accentColor;
+
+    font-size: 1.2rem;
+    color: $bgColor;
+    font-weight: 600;
   }
 }
 .serviceCards {
@@ -323,9 +345,18 @@ label {
   img {
     max-width: 40px;
   }
+  @include medium {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: $bgColor;
+  }
 }
 .partnership {
-  background-color: $textColor;
+  background-color: $bgColor;
 }
 #abbatoir,
 #farm-crop,
@@ -355,7 +386,7 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .allWorks_buttons {
   display: flex;
@@ -390,7 +421,10 @@ label {
 }
 .home_gallery_options {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   button {
     padding: 0.5rem 1rem;
     background-color: transparent;
@@ -401,4 +435,8 @@ label {
       padding: 1rem 2rem;
     }
   }
+}
+.firtSection,
+.FourthSection {
+  background-color: $Background-col;
 }
