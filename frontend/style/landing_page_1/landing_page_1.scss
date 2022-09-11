@@ -625,6 +625,7 @@ ul { list-style-type: none; }
 .our_services_cont{
     display: flex;
     flex-direction: column;
+    gap: 1.5em;
 }
 .our_services_head{
     text-align: center;
@@ -644,13 +645,14 @@ ul { list-style-type: none; }
     background-color: $primary-col-2;
     padding: 2.5em 1.3em;
     margin-bottom: 0.7em;
-    transition: 1s;
+    transition: 1.5s;
     box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06)
 }
 .our_services_card:hover {
     .service_icon{
         background-color: $primary-col-3;
         color: $primary-col-2;
+        transition: 1.2s;
     }    
 }
 
@@ -848,6 +850,8 @@ ul { list-style-type: none; }
     height: 14em;
     width: 18em;
     margin: 1.3em;
+
+
 }
 .home_gallery_pht_1, #abbatoir, #farm-crop, #feed, #medicine, #stable, .pageTwo, .pageThree, .pageFour, .pageFive{
     display: none;
