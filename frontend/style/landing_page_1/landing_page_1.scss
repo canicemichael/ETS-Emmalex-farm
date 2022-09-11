@@ -26,6 +26,12 @@
     align-items: center;
 }
 
+.home_video{
+    position: relative;
+
+    
+}
+
 video {
     /** Simulationg background-size: cover */
     object-fit: cover;
@@ -35,6 +41,14 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+
+    // &::after{
+    //     content: "";
+    //     background-color: $primary-col-4;
+    //     width: 100%;
+    //     height: 100%;
+    //     opacity: 1;
+    // }
 
 }
 
@@ -229,7 +243,7 @@ video {
 .donkey_sections{
     display: flex;
     justify-content: space-between;
-    padding: 3em 2em;
+    padding: 6em 2em;
     background-color: $background-col-one;
 }
 .donkey_section--img{
@@ -279,7 +293,7 @@ video {
         width: 100%;
         height: 100%;
         z-index: 2;
-        background: linear-gradient(to bottom, rgba(214, 8, 8, 0.2), rgba(52, 14, 14, 0.9));
+        background: linear-gradient(to bottom, rgba(53, 14, 14, 0.2), rgba(52, 14, 14, 0.9));
         transition: 1.5s all;
         opacity: 0;
     }
@@ -287,11 +301,14 @@ video {
     .intro {
         position: relative;
         z-index: 3;
-        color: white;
+        background: linear-gradient(to bottom, rgba(53, 14, 14, 0.2), rgba(52, 14, 14, 0.9));
+        color: $primary-col-2;
         transform: translateY(300px);
         opacity: 0;
         transition: 0.5s all;
         padding: 1em;
+        height: 100%;
+        width: 100%;
         // @include large {
         //     transform: translateY(500px);
         // }
@@ -422,8 +439,9 @@ video {
 
 .our_about_us{
     display: flex;
-    padding: 0 .5em;
-    background-color: $background-col-one;
+    padding: 1rem .5em;
+    padding-bottom: 0;
+    background-color: $primary-col-2;
 }
 .our_about_us--1{
     width: 50%;
@@ -438,14 +456,13 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $background-col-one;
-    margin-bottom: -2em;
+    background-color: $primary-col-2;
+    padding-top: 6rem;
 }
 .our_about_us_header_1{
-    font-size: 1.4em;
+    font-size: clamp(1.2rem, 3.5rem, 2rem);
     font-weight: 600;
     color: $primary-col-8;
-    margin-bottom: 0.8em;
 }
 .our_about_us_desc{
     font-size: 1.4em;
@@ -592,8 +609,8 @@ ul { list-style-type: none; }
 // our services landing_page
 
 .our_services{
-    padding: 2.5em 2em;
-    background-color: $background-col-one;
+    padding: 6rem 2em;
+    background-color: $primary-col-2;
 }
 .our_services_container{
     display: flex;
@@ -607,7 +624,7 @@ ul { list-style-type: none; }
     text-align: center;
     margin-bottom: 1em;
     color: $primary-col-4;
-    font-size: 1.4em;
+    font-size: clamp(1.2rem, 3.5rem, 2rem);
     font-weight: 600;
 }
 .our_services_desc{
@@ -622,6 +639,7 @@ ul { list-style-type: none; }
     padding: 2.5em 1.3em;
     margin-bottom: 0.7em;
     transition: 1s;
+    box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06)
 }
 .our_services_card:hover {
     .service_icon{
@@ -727,10 +745,9 @@ ul { list-style-type: none; }
 // home_gallery
 
 .home_gallery{
-    margin: 2.5em 1.5em;
     transition: all 2s;
     background-color: $background-col-one;
-    padding: 2em 0;
+    padding: 6rem 0;
 }
 
 .home_gallery_options{
@@ -841,6 +858,11 @@ ul { list-style-type: none; }
     #stable {
         justify-content: center;
     }
+    .home_gallery{
+        transition: all 2s;
+        background-color: $background-col-one;
+        padding: 4em 0;
+    }
 }
 @media screen and (min-width: 425.1px) and (max-width: 768px){
     .home_gallery--img{
@@ -869,9 +891,9 @@ ul { list-style-type: none; }
 // customer review
 
 .customer_review{
-    margin: 2.5em 0.7em;
+    margin: 0 0.7em;
     background-color: $background-col-one;
-    padding: 2em 0;
+    padding: 6rem 0;
 }
 .cards-wrapper{
     display: flex;
