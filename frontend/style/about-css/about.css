@@ -453,13 +453,9 @@ remove the container padding
 .meet-card {
   display: grid;
   margin-top: 3em;
-  /* flex-direction: column; */
   padding: 2em 1em;
-  /* height: 200px; */
-  height: 190px;
+  height: auto;
   width: 200px;
-  /* width: 70%; */
-  /* background-color: red; */
   border-radius: 8px;
   box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
   gap: 1em;
@@ -542,9 +538,7 @@ remove the container padding
   .underline {
     margin-top: 1.3em;
   }
-  .content {
-    margin-top: 3em;
-  }
+
   .underline-text {
     height: 0.3em;
   }
@@ -625,9 +619,7 @@ remove the container padding
   .underline {
     margin-top: 1.3em;
   }
-  .content {
-    margin-top: 1em;
-  }
+
   .underline-text {
     height: 0.3em;
     /* margin-top: -2em; */
@@ -660,22 +652,12 @@ remove the container padding
   .item-content {
     padding: 0 2em;
   }
-  .history {
-    /* margin-top: 2em; */
-  }
-  .history-content {
-    /* padding: 0 2em; */
-  }
   .year1 {
     padding: 1em;
   }
   .meet {
     padding: 0 2em;
   }
-  /* .meet-image {
-    width: 125px;
-    height: 125px;
-  } */
 }
 @media screen and (max-width: 580px) {
   body {
@@ -684,17 +666,12 @@ remove the container padding
   .context {
     width: 100%;
   }
-  p {
-    /* font-size: 1.2rem; */
-  }
+
   .logo-img {
     height: 140px;
   }
 
-  .content {
-    margin-top: 2em;
-  }
-  .text {
+  */ .text {
     height: auto;
   }
   .text h2 {
@@ -728,27 +705,20 @@ remove the container padding
   .item-image img {
     width: 100%;
   }
-  /* .line {
-    margin-left: 40%;
-  } */
+
   .item {
     width: 100%;
   }
-  .item-1 p {
-    /* font-size: 1.2rem; */
-  }
+
   .paragraph {
     margin-bottom: 2em;
-    /* font-size: 1.2rem; */
     width: 100%;
   }
   .text-paragraph {
-    /* font-size: 1.2rem; */
     width: 100%;
   }
   .background-image {
     margin-top: 4em;
-    /* height: 900px; */
   }
   .background-image img {
     width: 100%;
@@ -762,7 +732,6 @@ remove the container padding
     flex-direction: column;
     padding: 0 1em;
     width: 100%;
-    /* height: auto; */
     gap: 1em;
     height: 100%;
     justify-content: center;
@@ -776,11 +745,6 @@ remove the container padding
   .premium {
     text-align: center;
     margin-top: 2em;
-    /* width: 80%; */
-    /* font-size: 1.5rem; */
-  }
-  .premium h2 {
-    /* font-size: 1.8rem; */
   }
 
   .sec-mission {
@@ -792,19 +756,12 @@ remove the container padding
     padding: 1.3em 2em;
   }
   .mission1 h2 {
-    /* font-size: 1.7rem; */
   }
   .mission1 p {
     padding: 0 1em;
   }
-  .history {
-    /* margin-top: 2.5em; */
-  }
-  .history h2 {
-    /* font-size: 2em; */
-  }
+
   .history-content {
-    /* padding: 0 2em; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5em;
@@ -818,14 +775,6 @@ remove the container padding
   .meet {
     padding: 0 2em;
   }
-  /* .meet-image {
-    width: 125px;
-    height: 125px;
-  } */
-  .card-component {
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* gap: 2em; */
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -836,19 +785,17 @@ remove the container padding
     width: 100%;
   }
   .banner {
-    /* height: 200px; */
     min-height: 150px;
   }
 
-  .content {
+  /* .content {
     margin-top: 2em;
-  }
+  } */
   .text {
     height: auto;
   }
   .text h2 {
     width: 100%;
-    /* font-size: 1.5rem; */
     margin: 0 auto;
     text-align: center;
     padding: 0 2em;
@@ -856,7 +803,6 @@ remove the container padding
   }
   .text h4 {
     width: 100%;
-    /* font-size: 1rem; */
     padding: 0 2em;
   }
   .section-image {
@@ -886,15 +832,9 @@ remove the container padding
     width: 100%;
   }
 
-  .our-products {
-    margin-top: 1.5em;
-  }
-
   .premium {
     text-align: center;
-    margin-top: 2em;
-    /* width: 100%; */
-    /* font-size: 1.5rem; */
+    /* margin-top: 2em; */
     padding: 0 1em;
   }
   .item-content {
@@ -912,21 +852,12 @@ remove the container padding
   .mission1 {
     width: 80%;
     margin: 0 auto;
-    /* padding: 1em 2em; */
   }
-  .mission1 h2 {
-    /* font-size: 1.6rem; */
-  }
+
   .mission1 p {
-    /* font-size: 1.2rem; */
     padding: 0 0.5em;
   }
-  .bold {
-    /* font-size: 1.3rem; */
-  }
-  .item-1 p {
-    /* font-size: 1.2rem; */
-  }
+
   .year1 {
     padding: 1.5em;
   }
@@ -937,17 +868,12 @@ remove the container padding
   .history-content {
     gap: 1em;
   }
-  .meet {
-    /* padding: 0 3em; */
-  }
+
   .card-component {
     grid-template-columns: 1fr;
-    /* background-color: #cc9444; */
-    /* width: 80%; */
-    /* margin: 0 auto; */
+
     margin-left: auto;
     margin-right: auto;
-    /* gap: 2em; */
   }
 }
 
@@ -958,22 +884,17 @@ remove the container padding
   .Container {
     padding-block: 4rem;
   }
-  p {
-    /* font-size: 1.1rem; */
-  }
+
   .context {
     width: 100%;
   }
   .about {
     text-align: center;
-    /* font-size: 2.7rem; */
   }
-  .content {
-    margin-top: 1em;
-  }
+
   .text h2 {
     width: 100%;
-    /* font-size: 1.7rem; */
+
     margin: 0 auto;
     text-align: center;
     padding: 0 1em;
@@ -981,7 +902,7 @@ remove the container padding
   }
   .text h4 {
     width: 100%;
-    /* font-size: 1rem; */
+
     padding: 0 2em;
   }
   .section-image {
@@ -1015,7 +936,6 @@ remove the container padding
     margin-top: 1em;
     width: 100%;
     height: 900px;
-    /* background-color: red; */
   }
   .background-image img {
     width: 100%;
@@ -1027,36 +947,22 @@ remove the container padding
   .mission1 {
     margin: 0 auto;
     width: 70%;
-    /* font-size: 1.5rem; */
   }
 
   .premium {
     text-align: center;
-    margin-top: 1.5em;
-    /* width: 100%; */
-    /* font-size: 1.5rem; */
     display: flex;
   }
-  .premium h2 {
-    /* font-size: 1.9rem; */
-    /* margin-bottom: 1em; */
-    text-transform: uppercase;
-    /* width: 100%; */
-  }
+
   .item-content {
     flex-direction: column;
     padding: 0 2em;
   }
-  .mission1 h2 {
-    /* font-size: 1.7rem; */
-  }
+
   .item-1 {
     width: 100%;
   }
   .item-1 p {
     line-height: 1.5;
-  }
-  .item-1 a {
-    /* font-size: 1rem; */
   }
 }
