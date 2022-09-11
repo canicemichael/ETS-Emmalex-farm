@@ -4,9 +4,39 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --primaryColor-1: #813b0d;
+  --secondaryColor: #fdf2ea54;
+  --primaryColor2: #fff;
+}
 body {
   /* width: 100%; */
   font-family: 'Quicksand', sans-serif;
+}
+p {
+  font-size: clamp(1rem, 3.5vw, 1.2rem);
+}
+h2 {
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
+}
+h3 {
+  text-align: center;
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
+  text-transform: uppercase;
+  color: var(--primaryColor-1);
+  /* background-color: #813b0d; */
+}
+h4 {
+  font-size: 1.1rem, 3.5vw, 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primaryColor-1);
+}
+p {
+  color: #1e120b;
+}
+a {
+  cursor: pointer;
 }
 p,
 h2,
@@ -14,16 +44,16 @@ h3,
 h4,
 h5,
 a {
-  color: #5c3021;
+  /* color: #5c3021; */
   font-family: 'Quicksand', sans-serif;
   /* color: #813b0d; */
 }
 p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   line-height: 1.6;
 }
 .bold {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 .context {
   display: flex;
@@ -36,7 +66,8 @@ p {
 .banner {
   width: 100%;
   /* background-color: red; */
-  height: 400px;
+  /* height: 400px; */
+  min-height: 300px;
   background-image: url('../../assets/donkeys-banner.webp');
   background-position: center center;
   background-size: cover;
@@ -50,14 +81,15 @@ p {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--primaryColor-1);
+  opacity: 0.8;
   /* height: 100%; */
 }
 .about {
   position: absolute;
   color: #fff;
   z-index: 100;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   text-transform: uppercase;
   top: 40%;
   text-align: center;
@@ -67,17 +99,12 @@ p {
   align-items: center;
 }
 .content {
-  /* color: #5c3021; */
-  /* background-color: #ffe4c3; */
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  /* margin-top: 5em; */
-  margin-bottom: 3em;
-  padding-block: 2rem;
+  background-color: var(--secondaryColor);
+}
+.Container {
+  width: 90%;
+  padding-block: 6rem;
+  margin: 0 auto;
 }
 .text {
   display: flex;
@@ -88,8 +115,9 @@ p {
   width: 100%;
   justify-content: center;
 }
+
 .text h2 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
 }
@@ -99,11 +127,11 @@ p {
   text-align: center;
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   line-height: 1.7;
 }
 .section-image {
-  padding: 0 6em;
+  /* padding: 0 6em; */
   display: flex;
   gap: 1.5em;
   margin-top: 3em;
@@ -141,13 +169,19 @@ p {
   justify-content: center;
   align-items: center;
   line-height: 23px;
-  padding: 1em;
+  /* padding: 1em; */
   /* background-color: blue; */
+}
+/*
+remove the container padding
+ */
+.Container.remove {
+  width: 100%;
 }
 .read {
   margin-top: 0.5em;
   text-decoration: none;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   /* color: #5c3021; */
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -175,7 +209,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5c3021;
+  background-color: var(--primaryColor-1);
   height: 0.2em;
   margin-left: auto;
   margin-right: auto;
@@ -188,53 +222,86 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #5c3021;
+  background-color: var(--primaryColor-1);
   height: 0.1em;
   margin-top: 0.5em;
 }
 /* design for mission */
+.mission-section {
+  background-color: #fff;
+}
 .sec-mission {
   display: flex;
-  /* background-image: url('../../assets/donkey.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  width: 100%;
+  gap: 3rem;
+  justify-content: center;
   margin: 0 auto;
-  /* padding: 0 2em; */
+
   position: relative;
-  background-color: #efe0bb;
 }
 
 .mission1 {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: left;
+  padding: 1.5em;
+  /* margin-top: 1em; */
+  gap: 0.5em;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  height: auto;
+  /* width: 400px; */
+  box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
+  /* background-color: #5c3021; */
+}
+.icon-shake {
+  background-color: var(--primaryColor-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.icon-shake :hover {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+.icon-shake i:hover {
+  color: var(--primaryColor-1);
+}
+.icon-shake i {
+  color: #fff;
+  font-size: 2rem;
 }
 .mission1 h2 {
   /* color: #5c3021; */
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   text-align: center;
 }
 .mission1 p {
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
-  padding: 0 2em;
+  /* padding: 0 2em; */
   /* background-color: red; */
 }
 /* design for mission */
 /* Design for history */
+.history-section {
+  background-color: var(--primaryColor2);
+  /* background-color: red; */
+}
 .history {
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  /* margin-top: 3em; */
 }
 .history h2 {
   text-align: center;
-  font-size: 2.5rem;
-  /* color: #5c3021; */
+
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -244,13 +311,14 @@ p {
   gap: 2em;
 }
 .year1 {
-  background-color: #5c3021;
+  background-color: var(--primaryColor-1);
   margin-top: 0.5em;
 }
 .year1 {
   text-align: center;
   /* box-shadow: 1px 1px 3px 2px #bc987e; */
   padding: 2em;
+  margin-top: 3em;
   /* border-radius: 8px; */
 }
 .year1 p {
@@ -261,7 +329,7 @@ p {
 .underline-text {
   margin: 0 auto;
   height: 0.2em;
-  background-color: #5c3021;
+  background-color: var(--primaryColor-1);
   width: 4em;
   /* margin-top: 1em; */
   margin-top: 1em;
@@ -280,8 +348,8 @@ p {
   display: flex;
   width: 100%;
   gap: 3rem;
-  margin-top: 1em;
-  padding: 0 6em;
+  margin-top: 3em;
+  /* padding: 0 6em; */
 }
 .item-1 {
   display: flex;
@@ -312,10 +380,10 @@ p {
   /* letter-spacing: 0.2em; */
   text-transform: uppercase;
   padding: 8px;
-  background-color: #5c3021;
+  background-color: var(--primaryColor-1);
   color: #fff;
   border-radius: 8px;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   /* color: #5c3021; */
   text-decoration: none;
   /* width: 40%; */
@@ -327,11 +395,11 @@ p {
 }
 .item-1 a:hover {
   background-color: #fff;
-  color: #5c3021;
-  border: 2px solid #5c3021;
+  color: var(--primaryColor-1);
+  border: 2px solid var(--primaryColor-1);
 }
 .premium h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -339,30 +407,33 @@ p {
 .lines {
   width: 3em;
   height: 0.2em;
-  background-color: #5c3021;
+  background-color: var(--primaryColor-1);
   margin: 0 auto;
 }
 .image1 p {
   text-align: center;
-  color: #5c3021;
+  /* color: #5c3021; */
 }
 .our-products {
-  margin-top: 4em;
-  width: 100%;
+  background-color: var(--secondaryColor);
 }
 .bold {
   font-weight: bold;
 }
+.meet-section {
+  background-color: var(--secondaryColor);
+  /* background-color: green; */
+}
 .meet {
   display: flex;
-  padding: 0 6em;
-  margin-top: 4em;
+  /* padding: 0 6em; */
+  /* margin-top: 4em; */
   flex-direction: column;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .meet h2 {
   text-align: center;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-weight: bold;
   text-transform: uppercase;
   /* color: #5c3021; */
@@ -385,12 +456,12 @@ p {
   /* flex-direction: column; */
   padding: 2em 1em;
   /* height: 200px; */
-  height: 170px;
+  height: 190px;
   width: 200px;
   /* width: 70%; */
   /* background-color: red; */
   border-radius: 8px;
-  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.06);
   gap: 1em;
 }
 .meet-card .name {
@@ -399,13 +470,13 @@ p {
   text-transform: uppercase;
 }
 .meet-card .office {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 0.5em;
   text-transform: uppercase;
 }
 .meet-card p {
   text-align: center;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
 }
 .meet-image {
   width: 100px;
@@ -429,7 +500,7 @@ p {
     width: 100%;
   }
   p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
   .text h4 {
     width: 80%;
@@ -460,7 +531,7 @@ p {
     width: 50%;
   }
   .paragraph {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     width: 100%;
     margin-bottom: 1em;
   }
@@ -489,7 +560,7 @@ p {
     /* height: auto */
   }
   .mission1 h2 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
   }
   .item-content {
     padding: 0 2em;
@@ -498,7 +569,7 @@ p {
     padding: 0 2em;
   }
   .history {
-    margin-top: 2em;
+    /* margin-top: 2em; */
   }
 }
 
@@ -507,7 +578,7 @@ p {
     width: 100%;
   }
   p {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
   .context {
     width: 100%;
@@ -543,7 +614,7 @@ p {
     width: 50%;
   }
   .paragraph {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     width: 100%;
     margin-bottom: 1em;
   }
@@ -563,11 +634,14 @@ p {
   }
   .mission1 {
     padding: 1.5em 1em;
+    align-items: center;
+    height: auto;
   }
   .mission1 h2 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
   }
   .mission1 p {
+    text-align: center;
     padding: 0 1em;
   }
   .text h4 {
@@ -587,7 +661,7 @@ p {
     padding: 0 2em;
   }
   .history {
-    margin-top: 2em;
+    /* margin-top: 2em; */
   }
   .history-content {
     /* padding: 0 2em; */
@@ -611,7 +685,7 @@ p {
     width: 100%;
   }
   p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
   .logo-img {
     height: 140px;
@@ -625,7 +699,7 @@ p {
   }
   .text h2 {
     width: 100%;
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin: 0 auto;
     text-align: center;
     padding: 0 2em;
@@ -633,7 +707,7 @@ p {
   }
   .text h4 {
     width: 100%;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding: 0 2em;
   }
   .section-image {
@@ -661,15 +735,15 @@ p {
     width: 100%;
   }
   .item-1 p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
   .paragraph {
     margin-bottom: 2em;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     width: 100%;
   }
   .text-paragraph {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     width: 100%;
   }
   .background-image {
@@ -703,10 +777,10 @@ p {
     text-align: center;
     margin-top: 2em;
     /* width: 80%; */
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
   .premium h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .sec-mission {
@@ -718,16 +792,16 @@ p {
     padding: 1.3em 2em;
   }
   .mission1 h2 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
   }
   .mission1 p {
     padding: 0 1em;
   }
   .history {
-    margin-top: 2.5em;
+    /* margin-top: 2.5em; */
   }
   .history h2 {
-    font-size: 2em;
+    /* font-size: 2em; */
   }
   .history-content {
     /* padding: 0 2em; */
@@ -762,7 +836,8 @@ p {
     width: 100%;
   }
   .banner {
-    height: 200px;
+    /* height: 200px; */
+    min-height: 150px;
   }
 
   .content {
@@ -773,7 +848,7 @@ p {
   }
   .text h2 {
     width: 100%;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin: 0 auto;
     text-align: center;
     padding: 0 2em;
@@ -781,7 +856,7 @@ p {
   }
   .text h4 {
     width: 100%;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding: 0 2em;
   }
   .section-image {
@@ -802,12 +877,12 @@ p {
   .paragraph {
     margin-bottom: 2em;
     width: 100%;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     line-height: 1.5;
   }
   .text-paragraph {
     line-height: 1.5;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     width: 100%;
   }
 
@@ -819,7 +894,7 @@ p {
     text-align: center;
     margin-top: 2em;
     /* width: 100%; */
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     padding: 0 1em;
   }
   .item-content {
@@ -835,27 +910,28 @@ p {
     width: 100%;
   }
   .mission1 {
-    width: 100%;
-    padding: 1em 2em;
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 1em 2em; */
   }
   .mission1 h2 {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
   .mission1 p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding: 0 0.5em;
   }
   .bold {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
   .item-1 p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
   .year1 {
     padding: 1.5em;
   }
   .year1 p {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding: 1em 0.5em;
   }
   .history-content {
@@ -879,22 +955,25 @@ p {
   body {
     width: 100%;
   }
+  .Container {
+    padding-block: 4rem;
+  }
   p {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
   }
   .context {
     width: 100%;
   }
   .about {
     text-align: center;
-    font-size: 2.7rem;
+    /* font-size: 2.7rem; */
   }
   .content {
     margin-top: 1em;
   }
   .text h2 {
     width: 100%;
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
     margin: 0 auto;
     text-align: center;
     padding: 0 1em;
@@ -902,7 +981,7 @@ p {
   }
   .text h4 {
     width: 100%;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     padding: 0 2em;
   }
   .section-image {
@@ -945,19 +1024,21 @@ p {
     margin-top: 1.5em;
   }
 
-  .mission1 h2 {
-    font-size: 1.5rem;
+  .mission1 {
+    margin: 0 auto;
+    width: 70%;
+    /* font-size: 1.5rem; */
   }
 
   .premium {
     text-align: center;
     margin-top: 1.5em;
     /* width: 100%; */
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     display: flex;
   }
   .premium h2 {
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
     /* margin-bottom: 1em; */
     text-transform: uppercase;
     /* width: 100%; */
@@ -967,7 +1048,7 @@ p {
     padding: 0 2em;
   }
   .mission1 h2 {
-    font-size: 1.7rem;
+    /* font-size: 1.7rem; */
   }
   .item-1 {
     width: 100%;
@@ -976,6 +1057,6 @@ p {
     line-height: 1.5;
   }
   .item-1 a {
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 }
