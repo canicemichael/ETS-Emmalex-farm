@@ -898,6 +898,7 @@ ul { list-style-type: none; }
 .cards-wrapper{
     display: flex;
     justify-content: space-around;
+    padding: 0 2em;
 }
 .card{
     width: calc(100%/3);
