@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/navbar.css" />
-    <script src="../scripts/booking.js" defer></script>
 
     <link
       rel="stylesheet"
@@ -16,6 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/slaughter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,6 +25,7 @@
     <script src="../scripts/navbar.js" defer></script>
   </head>
   <body>
+    <!-- navbar section -->
     <header>
       <nav>
         <div class="fewDetails">
@@ -178,247 +178,191 @@
         </div>
       </div>
     </header>
-    <main>
-      <div class="BreadCrumb">
-        <div>
-          <h2>Booking</h2>
-          <p>You Here! > Home > Booking</p>
+    <!-- navbar section -->
+
+    <section class="banner">
+      <div class="page-banner">
+        <div class="about-text">
+
+          <h2 >Slaughter House</h2>
+          <p><p>You Here! > Home > Slaughter House</p></p>
         </div>
       </div>
-      <section className="BookMethod">
-        <div>
-          <div class="heroFlex Container">
-            <section class="EmailBooking">
-              <h3>Book Donkey Via Email</h3>
-              <form className="form" method="POST">
-                <div class="formItem desiredP">
-                  <label for="Product">Please select any of our Product</label>
-                  <div class="select">
-                    <label for="live_donkey"
-                      ><input
-                        type="checkbox"
-                        name="live_donkey"
-                        id="live_donkey"
-                        checked
-                      />
-                      Live Donkey</label
-                    >
-                    <label for="donkey_meat"
-                      ><input
-                        type="checkbox"
-                        name="donkey_meat"
-                        id="donkey_meat"
-                        checked
-                      />Donkey Meat</label
-                    >
-                    <label for="donkey_milk"
-                      ><input
-                        type="checkbox"
-                        name="donkey_milk"
-                        id="donkey_milk"
-                        checked
-                      />Donkey Milk</label
-                    >
-                  </div>
-                </div>
-                <div class="ProductDetails">
-                  <div class="BasicInfo">
-                    <div class="formItem">
-                      <label for="name">Name</label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Plese enter your name"
-                        required
-                      />
-                    </div>
+    </section>
 
-                    <div class="formItem">
-                      <label for="phone">Phone No.</label>
-                      <input
-                        type="tel"
-                        name="Phone"
-                        id="phone"
-                        placeholder="Please enter your Phone No"
-                        required
-                      />
-                    </div>
-                    <div class="formItem">
-                      <label for="address">Address</label>
-                      <input
-                        type="text"
-                        name="address"
-                        id="address"
-                        placeholder="Please enter the delivery address"
-                        required
-                      />
-                    </div>
-                    <div class="LiveDonkey">
-                      <div class="formItem">
-                        <label for="donkeySpecies">Live Donkey Species</label>
-                        <select name="live_donkey Species" id="donkeySpecies">
-                          <option value="Miniature Mediterranean">
-                            Miniature Mediterranean
-                          </option>
-                          <option value="American Mammoth">
-                            American Mammoth
-                          </option>
-                          <option value="Appaloosa Horses">
-                            Appaloosa Horses
-                          </option>
-                          <option value="Standard Donkey">
-                            Standard Donkey
-                          </option>
-                          <option value="Baudet Du Potiu">
-                            Baudet Du Potiu
-                          </option>
-                        </select>
-                      </div>
-                      <div class="formItem qty">
-                        <label for="quantity"> Quantity of Live Donkey </label>
-                        <input
-                          type="number"
-                          name="quantity"
-                          id="quantity"
-                          placeholder="Please enter quantity of donkey"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="otherbooking">
-                    <div>
-                      <div class="formItem first">
-                        <label for="email">Email</label>
-                        <input
-                          type="text"
-                          name="email"
-                          id="email"
-                          placeholder="Please enter your email"
-                          required
-                        />
-                      </div>
-                      <div class="DonkeyMeat">
-                        <div class="formItem">
-                          <label for="donkeySpecies">Donkey Meat Species</label>
-                          <select name="donkey meat Species" id="donkeySpecies">
-                            <option value="Miniature Mediterranean">
-                              Miniature Mediterranean
-                            </option>
-                            <option value="American Mammoth">
-                              American Mammoth
-                            </option>
-                            <option value="Appaloosa Horses">
-                              Appaloosa Horses
-                            </option>
-                            <option value="Standard Donkey">
-                              Standard Donkey
-                            </option>
-                            <option value="Baudet Du Potiu">
-                              Baudet Du Potiu
-                            </option>
-                          </select>
-                        </div>
-                        <div class="formItem">
-                          <label for="Meatquantity">
-                            Kilogram of Donkey Meat
-                          </label>
-                          <input
-                            type="number"
-                            name="quantity"
-                            id="Meatquantity"
-                            placeholder="Please enter kilo of donkey meat needed"
-                            required
-                          />
-                        </div>
-                      </div>
-                      <div class="DonkeyMilk">
-                        <div class="formItem">
-                          <label for="donkeySpecies">Donkey Milk Species</label>
-                          <select name="donkey milk Species" id="donkeySpecies">
-                            <option value="Miniature Mediterranean">
-                              Miniature Mediterranean
-                            </option>
-                            <option value="American Mammoth">
-                              American Mammoth
-                            </option>
-                            <option value="Appaloosa Horses">
-                              Appaloosa Horses
-                            </option>
-                            <option value="Standard Donkey">
-                              Standard Donkey
-                            </option>
-                            <option value="Baudet Du Potiu">
-                              Baudet Du Potiu
-                            </option>
-                          </select>
-                        </div>
-                        <div class="formItem">
-                          <label for="Milkquantity">
-                            Donkey Milk in Litres
-                          </label>
-                          <input
-                            type="number"
-                            name="quantity"
-                            id="Milkquantity"
-                            placeholder="Please enter liters of donkey milk needed"
-                            required
-                          />
-                        </div>
-                      </div>
-                    </div>
+    <!-- slaughter house description -->
+    <section class="description-section">
+      <div class="Container">
+        <div class="description">
+          <div class="text">
+            <h3>our slaughter house</h3>
+            <div class="underline"></div>
+            <h4>
+              ETS EMMALEX Global Limited Farm <br />
+              ANGWAN DUSTE,DOME PRINCE OF INTERNATIONAL ACADEMY ROAD, UKE,KARU
+              LGA NASSARAWA STATE <br />
+              TEL: 08037294665
+            </h4>
+            <div class="technique">
+              <div class="technique-img">
+                <div class="first-item ">
+                  <img
+                    class="photo"
+                    src="../assets/slaughter/butcher.jfif"
+                    alt=""
+                  />
+                  <article>
+                    <p>
+                      ETS EMMALEX Global Limited Farm have a facility where
+                      donkeys are processed to provide meat for humans. We have
+                      40 hectares of land for pasturing and planting of grass
+                      for feed. Animal Breeders and skin Guild Association of
+                      Nigeria have also proposed to invest in our farm for
+                      breeding of more Donkeys in Nigeria. Our establishment
+                      have answered the donkey slaughtering regulation bill by
+                      Nigerian senate committee on agriculture. We also have
+                      separate lockable facilities or climate permitting Dens
+                      for sick or suspect animals with separate draining and
+                      sited in such a way as to avoid contamination of other
+                      animals.
+                    </p>
+             
+                  </article>
+                </div>
 
-                    <button type="submit">Book the Donkey</button>
-                  </div>
-                </div>
-              </form>
-            </section>
-            <section class="map">
-              <section class="CardFlex">
-                <div class="mainDiv">
-                  <a href="tel:+2348037294665" class="Card">
-                    <img
-                      src="../assets/booking/phone-46-64.png"
-                      alt="phone"
-                      id="img-icon"
-                    />
-                    <div>
-                      <h5>Book Donkey Via Call</h5>
-                      <p>Click to Call</p>
-                    </div>
-                  </a>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=8037294665&text=i%20want%20to%20purchase%20donkey"
-                    class="Card"
-                  >
-                    <img
-                      src="../assets/booking/whatsapp-64.png"
-                      alt="whatsapp"
-                      id="img-icon"
-                    />
-                    <div>
-                      <h5>Book Donkey Via Whatsapp</h5>
-                      <p>Click to Message</p>
-                    </div>
-                  </a>
-                </div>
-              </section>
-              <h3>Visit Our Farm Via Google Map</h3>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252160.1141516946!2d7.35292861451006!3d9.063600493685273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e03970e5541a5%3A0xa4d55811805acd57!2sAngwan%20Mai-nasara!5e0!3m2!1sen!2sng!4v1662407080754!5m2!1sen!2sng"
-                width="100%"
-                height="500"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </section>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <!-- section our storage -->
+    <section class="storage">
+      <div class="Container">
+        <div class="text">
+          <h3>our Storage</h3>
+          <div class="underline"></div>
+        </div>
+        <div class="technique">
+          <div class="technique-img">
+            <div class="first-item flexR">
+              <article>
+                <p>
+                  ETS EMMALEX Global Limited Farm have a facility in their
+                  Slaughter house called Carcass chilling area, A Facility that
+                  ensure chilling of the meat at temperature range 1 °C to 3 °C
+                  . Our storage provides Temperature which is the most important
+                  factor influencing bacterial growth. Pathogenic bacteria do
+                  not grow well in temperatures under 3 °C (38 °F). Therefore,
+                  meat should be stored at temperatures that are as cold as
+                  possible. During the chilling operations, there must be
+                  adequate ventilation to prevent condensation on the surface of
+                  the meat. We also ensure that Exposed meat must be stored and
+                  transported separately from packaged meat.
+                </p>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                  reprehenderit accusamus accusantium, molestiae ipsam tempore
+                  possimus rem deserunt suscipit architecto officiis placeat nemo
+                  nostrum id! Consequatur tempora a ipsum iusto, pariatur dolorem
+                  expedita architecto sed recusandae vero. Blanditiis, quos velit?
+                </p> -->
+              </article>
+              <img
+                class="photo"
+                src="../assets/slaughter/slaughter4.jpg"
+                alt=""
+              />
+            </div>
+            <!-- <div class="second-item">
+              <img
+                class="photo"
+                src="../../assets/slaughter-house/storage.jpg"
+                alt=""
+              />
+              <article>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                  magnam iure, sint tempora sapiente dolores eveniet minus ullam
+                  quas soluta corrupti debitis ducimus repellat quidem. Eaque
+                  rerum id dolore. Dolore eveniet cumque numquam eos illo id
+                  pariatur incidunt quam corrupti?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                  reprehenderit accusamus accusantium, molestiae ipsam tempore
+                  possimus rem deserunt suscipit architecto officiis placeat nemo
+                  nostrum id! Consequatur tempora a ipsum iusto, pariatur dolorem
+                  expedita architecto sed recusandae vero. Blanditiis, quos velit?
+                </p>
+              </article>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section">
+      <div class="Container">
+        <div class="visit">
+          <div class="visit-text">
+            <h3>why you should visit our slaughter house</h3>
+            <div class="underline"></div>
+            <div class="section-visit">
+              <div class="reason1">
+                <div class="icon-shake">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <h4>Experience</h4>
+                <p>
+                  We have qualified workers who are qualified in taking healthy
+                  care of donkeys as well as the processing.
+                </p>
+              </div>
+              <div class="reason1">
+                <div class="icon-shake">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </div>
+                <h4>hygiene</h4>
+                <p>
+                  We have regular environmental sanitation and health care
+                  establishment at our site to ensure healthy donkeys.
+                </p>
+              </div>
+              <div class="reason1">
+                <div class="icon-shake">
+                  <i class="fa-solid fa-shop"></i>
+                </div>
+                <h4>storage</h4>
+                <p>
+                  We have proper storage cycle for the processing of their end
+                  products which prevents bacteria reaction on them
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="Container">
+        <div class="gallery">
+          <h3>slaughter house Gallery</h3>
+          <div class="underline"></div>
+          <div class="gallery-images">
+            <img src="../assets/slaughter/slaughter3.jpg" alt="" />
+            <img src="../assets/slaughter/slaughter4.jpg" alt="" />
+            <img src="../assets/slaughter/slaughter5.jpg" alt="" />
+            <img src="../assets/slaughter/slaughter6.jfif" alt="" />
+            <img src="../assets/slaughter/slaughter7.jpg" alt="" />
+            <img src="../assets/slaughter/butcher.jfif" alt="" />
+            <img src="../assets/slaughter/gallery17.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
     <footer>
       <div class="Container">
         <section>
@@ -531,5 +475,9 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/a2cd4c4be6.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

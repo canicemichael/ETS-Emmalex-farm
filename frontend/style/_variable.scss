@@ -4,28 +4,20 @@ $bgColor: #813b0d;
 $Background-col: #fdf2ea54;
 $tranbgColor: #1e120bd3;
 $textColor: #1e120b;
-$accentColor: #dc8c54;
-$dark-accentColor: #dc7035;
-$li-color: #03034e;
-$grayishbalck: #323232;
-$para-color: #000814;
-$light-lightGrey: #d9d9d9;
-$back-Col-main: #f6faff;
-$header-bg: #e1eff8;
-/*Neutral color*/
 
-$danger: #d31616;
-$light-greyish: #535454;
-$background-white: hsl(0, 0%, 95%);
-$amount-col: #006398;
 $large_screen: 1150px;
-
 $medium_screen: 960px;
+$mobile_screen: 560px;
 $medium_screenm: 1200px;
 $medium_screenl: 1300px;
 
 @mixin large {
   @media (min-width: $large_screen) {
+    @content;
+  }
+}
+@mixin mobileMax {
+  @media (max-width: $mobile_screen) {
     @content;
   }
 }

@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css" />
-    <script src="../scripts/service.js" defer></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <link rel="stylesheet" href="../style/footer.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+      rel="stylesheet"
     />
     <script src="../scripts/navbar.js" defer></script>
     <script src="../scripts/service.js" defer></script>
@@ -101,6 +103,7 @@
                   </ul>
                 </li>
 
+                <a href="gallery.html"><li>GALLERY</li></a>
                 <a href="service.html"><li id="activeMenu">SERVICES</li></a>
                 <a href="booking.html"><li>BOOKING</li></a>
                 <a href="contact-us.html"><li>CONTACT US</li></a>
@@ -108,21 +111,74 @@
             </div>
             <div class="mobile">
               <div id="hamBrown">
-                <i
-                  class="fa-solid fa-bars"
-                  style="color: #813b0d; font-size: 2rem"
-                ></i>
+                <div id="openBr">
+                  <i
+                    class="fa-solid fa-bars"
+                    style="color: #813b0d; font-size: 2rem"
+                  ></i>
+                </div>
+                <div id="closeBr">
+                  <i
+                    class="fa-solid fa-xmark"
+                    style="color: #813b0d; font-size: 2rem"
+                  ></i>
+                </div>
               </div>
               <div id="hamWhite">
-                <i
-                  class="fa-solid fa-bars"
-                  style="color: white; font-size: 2rem"
-                ></i>
+                <div id="openW">
+                  <i
+                    class="fa-solid fa-bars"
+                    style="color: white; font-size: 2rem"
+                  ></i>
+                </div>
+                <div id="closeW">
+                  <i
+                    class="fa-solid fa-xmark"
+                    style="color: white; font-size: 2rem"
+                  ></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </nav>
+      <div>
+        <div class="mobile-p" id="mobileNav">
+          <ul class="Container mobilediv">
+            <a href="index.html"><li>HOME</li></a>
+            <a href="about-us.html"><li>ABOUT US</li></a>
+            <a href="gallery.html"><li>GALLERY</li></a>
+            <a href="service.html"><li id="activeMenu">SERVICES</li></a>
+            <div id="add">
+              <a href="product.html"> PRODUCTS </a>
+              <div id="plusSign">
+                <i
+                  class="fa-solid fa-plus"
+                  style="color: #1e120b; font-size: 1.2rem"
+                ></i>
+              </div>
+              <div id="minus">
+                <i
+                  class="fa-solid fa-minus"
+                  style="color: #1e120b; font-size: 1.2rem"
+                ></i>
+              </div>
+            </div>
+            <div id="subItem">
+              <a href="booking.html"><li>Buy/Book Donkeys</li></a>
+              <a href="booking.html"><li>Donkey Meat</li></a>
+              <a href="booking.html"><li>Donkey Milk</li></a>
+              <a href="booking.html"><li>Donkey Breeds</li></a>
+              <a href="booking.html"><li>Excursions/Visits</li></a>
+              <a href="booking.html"><li>Adoption</li></a>
+              <a href="booking.html"><li>Donkey Rides</li></a>
+            </div>
+
+            <a href="booking.html"><li>BOOKING</li></a>
+            <a href="contact-us.html"><li>CONTACT US</li></a>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <div class="BreadCrumb">
@@ -145,7 +201,7 @@
               </div>
             </div>
             <div class="a-card">
-              <img src="../assets/landing_page/gallery7.png" alt="" />
+              <img src="../assets/about/meat2.jpg" alt="" />
               <div class="Card-info">
                 <h4>Donkey Meat</h4>
                 <p>
@@ -155,7 +211,7 @@
               </div>
             </div>
             <div class="a-card">
-              <img src="../assets/landing_page/stable3.jpg" alt="" />
+              <img src="../assets/about/milk.jpg" alt="" />
               <div class="Card-info">
                 <h4>Donkey Milk</h4>
                 <p>
@@ -178,10 +234,13 @@
 
           <div class="serviceCards">
             <div class="serviceCard">
-              <div>
-                <img src="../assets/service/donkey-icon.svg" alt="" />
+              <div class="pdIcon">
+                <i
+                  class="fa-solid fa-horse"
+                  style="color: white; font-size: 2rem"
+                ></i>
               </div>
-              <div>
+              <div class="serviceCardInfo">
                 <h5>Live Donkey</h5>
                 <p>
                   We have different species of donkey available for booking
@@ -190,10 +249,10 @@
               </div>
             </div>
             <div class="serviceCard">
-              <div>
-                <img src="../assets/service/donkey-icon.svg" alt="" />
+              <div class="pdIcon">
+                <img src="../assets/service/meat-01.png" alt="" />
               </div>
-              <div>
+              <div class="serviceCardInfo">
                 <h5>Donkey Meat</h5>
                 <p>
                   We sell high quality premium donkey meat. All our donkey meat
@@ -202,10 +261,10 @@
               </div>
             </div>
             <div class="serviceCard">
-              <div>
-                <img src="../assets/service/donkey-icon.svg" alt="" />
+              <div class="pdIcon">
+                <img src="../assets/service/milk-64.png" alt="" />
               </div>
-              <div>
+              <div class="serviceCardInfo">
                 <h5>Donkey Milk</h5>
                 <p>
                   Our Donkey Milk is extracted from healthy donkey. All our
@@ -215,10 +274,13 @@
               </div>
             </div>
             <div class="serviceCard">
-              <div>
-                <img src="../assets/service/donkey-icon.svg" alt="" />
+              <div class="pdIcon">
+                <i
+                  class="fa-solid fa-horse"
+                  style="color: white; font-size: 2rem"
+                ></i>
               </div>
-              <div>
+              <div class="serviceCardInfo">
                 <h5>Donkey Breeds</h5>
                 <p>
                   The care and breed different donkey breed in our farm. We in
@@ -228,10 +290,13 @@
               </div>
             </div>
             <div class="serviceCard">
-              <div>
-                <img src="../assets/service/donkey-icon.svg" alt="" />
+              <div class="pdIcon">
+                <i
+                  class="fa-solid fa-person-walking-luggage"
+                  style="color: white; font-size: 2rem"
+                ></i>
               </div>
-              <div>
+              <div class="serviceCardInfo">
                 <h5>Excursions/Visits</h5>
                 <p>
                   Adult, children, school, government organization are all
@@ -241,8 +306,8 @@
               </div>
             </div>
             <div class="serviceCard">
-              <div>
-                <img src="../assets/service/donkey-icon.svg" alt="" />
+              <div class="pdIcon">
+                <img src="../assets/service/group-64.png" alt="" />
               </div>
               <div>
                 <h5>Adoption</h5>
@@ -556,117 +621,116 @@
       </section>
     </main>
     <footer>
-      <section class="footerr">
-        <div class="footer_top">
-          <div class="footer_top_one">
-            <div class="footer_top_one--1">
-              <h1 class="footerr_header">OUR ADDRESS</h1>
-              <div class="footer_top_one--1--content">
-                <i class="fa-solid fa-location-dot margin_btm_icon"></i>
-                <p>Angwan Mainasara, Uke, Karu L.G.A, Nasarawa State Nigeria</p>
-              </div>
-              <div class="footer_top_one--1--content">
-                <i class="fa-solid fa-phone margin_btm_icon"></i>
-                <p>08037294665</p>
-              </div>
-              <div class="footer_top_one--1--content">
-                <i class="fa-solid fa-envelope margin_btm_icon"></i>
-                <p>suchidebe@gmail.com</p>
-              </div>
-              <div class="footer_top_one--1--content last-item">
-                <i class="fa-solid fa-clock margin_btm_icon"></i>
-                <p>Time: 9:00am - 4:00pm</p>
-              </div>
-            </div>
-            <div class="footer_top_one--2">
-              <h1 class="footerr_header">USEFUL LINKS</h1>
-              <div class="footer_top_one--2--links">
-                <a class="useful_link" href="">Link 1</a>
-                <a class="useful_link" href="">Link 1</a>
-                <a class="useful_link" href="">Link 1</a>
-                <a class="useful_link" href="">Link 1</a>
-                <a class="useful_link" href="">Link 1</a>
-              </div>
-            </div>
-          </div>
-          <div class="footer_top_two">
-            <div class="footer_top_two--1">
-              <h1 class="footerr_header margin_top_small">OUR GALLERY</h1>
-              <div class="footer_gallery_container">
-                <div class="margin_bottom_small flex_justify_btw">
-                  <img
-                    class="footer_gallery"
-                    src="../../assets/landing_page/sbale6.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="footer_gallery"
-                    src="../../assets/landing_page/sbale6.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="footer_gallery"
-                    src="../../assets/landing_page/sbale6.jpg"
-                    alt=""
-                  />
+      <div class="Container">
+        <section>
+          <div class="footer_top">
+            <div class="footer_top_one">
+              <div class="footer_top_one--1">
+                <h1 class="footerr_header">OUR ADDRESS</h1>
+                <div class="footer_top_one--1--content">
+                  <i class="fa-solid fa-location-dot margin_btm_icon"></i>
+                  <p>
+                    Angwan Mainasara, Uke, Karu L.G.A, Nasarawa State Nigeria
+                  </p>
                 </div>
-                <div class="flex_justify_btw">
-                  <img
-                    class="footer_gallery"
-                    src="../../assets/landing_page/sbale6.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="footer_gallery"
-                    src="../../assets/landing_page/sbale6.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="footer_gallery"
-                    src="../../assets/landing_page/sbale6.jpg"
-                    alt=""
-                  />
+                <div class="footer_top_one--1--content">
+                  <i class="fa-solid fa-phone margin_btm_icon"></i>
+                  <p>08037294665</p>
+                </div>
+                <div class="footer_top_one--1--content">
+                  <i class="fa-solid fa-envelope margin_btm_icon"></i>
+                  <p>suchidebe@gmail.com</p>
+                </div>
+                <div class="footer_top_one--1--content last-item">
+                  <i class="fa-solid fa-clock margin_btm_icon"></i>
+                  <p>Time: 9:00am - 4:00pm</p>
+                </div>
+              </div>
+              <div class="footer_top_one--2">
+                <h1 class="footerr_header">USEFUL LINKS</h1>
+                <div class="footer_top_one--2--links">
+                  <a class="useful_link" href="">Link 1</a>
+                  <a class="useful_link" href="">Link 1</a>
+                  <a class="useful_link" href="">Link 1</a>
+                  <a class="useful_link" href="">Link 1</a>
+                  <a class="useful_link" href="">Link 1</a>
                 </div>
               </div>
             </div>
-            <div class="footer_top_two--2 working_hours">
-              <h1 class="footerr_header margin_top_small">WORKING HOURS</h1>
-              <div class="flex_justify_btw divider_line">
-                <p>Monday-Friday</p>
-                <p>08:00 - 20:00</p>
+            <div class="footer_top_two">
+              <div class="footer_top_two--1">
+                <h1 class="footerr_header margin_top_small">OUR GALLERY</h1>
+                <div class="footer_gallery_container">
+                  <div class="margin_bottom_small flex_justify_btw">
+                    <img
+                      class="footer_gallery"
+                      src="../assets/landing_page/medicine4.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="footer_gallery"
+                      src="../assets/landing_page/stable3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="footer_gallery"
+                      src="../assets/landing_page/crop-farm-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="flex_justify_btw">
+                    <img
+                      class="footer_gallery"
+                      src="../assets/landing_page/gallery8.png"
+                      alt=""
+                    />
+                    <img
+                      class="footer_gallery"
+                      src="../assets/landing_page/gallery9.png"
+                      alt=""
+                    />
+                    <img
+                      class="footer_gallery"
+                      src="../assets/landing_page/feed4.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="flex_justify_btw divider_line">
-                <p>Saturday</p>
-                <p>09:00 - 18:00</p>
-              </div>
-              <div class="flex_justify_btw divider_line">
-                <p>Sunday</p>
-                <p>09:00 - 18:00</p>
-              </div>
-              <div class="flex_justify_btw divider_line">
-                <p>Emergency:</p>
-                <p>phone number</p>
+              <div class="footer_top_two--2 working_hours">
+                <h1 class="footerr_header margin_top_small">WORKING HOURS</h1>
+                <div class="flex_justify_btw divider_line">
+                  <p>Monday-Friday</p>
+                  <p>08:00 - 20:00</p>
+                </div>
+                <div class="flex_justify_btw divider_line">
+                  <p>Saturday</p>
+                  <p>09:00 - 18:00</p>
+                </div>
+                <div class="flex_justify_btw divider_line">
+                  <p>Sunday</p>
+                  <p>09:00 - 18:00</p>
+                </div>
+                <div class="flex_justify_btw divider_line">
+                  <p>Emergency:</p>
+                  <p>phone number</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <div class="footer_bottom">
-        <div>
-          Copyright <i class="fa-regular fa-copyright"></i> ETS all rights
-          reserved.
-        </div>
-        <div class="footer_bottom_links">
-          <a class="useful_link" href="">About</a>
-          <a class="useful_link" href="">Service</a>
-          <a class="useful_link" href="">Contact</a>
+        </section>
+        <div class="footbot">
+          <div>
+            Copyright <i class="fa-regular fa-copyright"></i> ETS all rights
+            reserved.
+          </div>
+          <div class="footer_bottom_links">
+            <a class="useful_link" href="">About</a>
+            <a class="useful_link" href="">Service</a>
+            <a class="useful_link" href="">Contact</a>
+          </div>
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

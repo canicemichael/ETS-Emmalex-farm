@@ -11,6 +11,8 @@ var closeBrown = document.getElementById("closeBr");
 var mobileNav = document.getElementById("mobileNav");
 var opensub = document.getElementById("add");
 var subItem = document.getElementById("subItem");
+var minusSign = document.getElementById("minus");
+var plusSign = document.getElementById("plusSign");
 
 window.onscroll = function () {
   if (window.pageYOffset >= 90) {
@@ -50,5 +52,13 @@ closeBrown.addEventListener("click", () => {
   closeBrown.style.display = "none";
 });
 opensub.addEventListener("click", () => {
-  subItem.style.display = "block";
+  if (subItem.style.display === "none") {
+    subItem.style.display = "block";
+    minusSign.style.display = "block";
+    plusSign.style.display = "none";
+  } else {
+    subItem.style.display = "none";
+    minusSign.style.display = "none";
+    plusSign.style.display = "block";
+  }
 });

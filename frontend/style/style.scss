@@ -1,7 +1,5 @@
 @import "./reset";
 @import "./variable";
-@import "./footer&nav";
-@import "./nav";
 
 h2 {
   color: $textColor;
@@ -15,14 +13,18 @@ h2 {
     font-size: clamp(1.4rem, 3.5vw, 2rem);
   }
 }
-h3 {
-  color: $bgColor;
+.EmailBooking {
+  h3 {
+    color: $bgColor;
+    margin-bottom: 1.5rem;
+  }
 }
+
 label {
-  color: $textColor;
+  color: $bgColor;
   font-size: 0.65rem;
   line-height: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   @include medium {
     font-size: 0.75rem;
     line-height: 2rem;
@@ -43,6 +45,7 @@ a {
   }
   @include large {
     width: 90%;
+    max-width: 1600px;
   }
 }
 .pd {
@@ -79,6 +82,10 @@ a {
   }
   .first {
     margin-top: 0;
+    margin-bottom: 1rem;
+    @include medium {
+      margin-bottom: 0;
+    }
   }
   button {
     align-self: flex-end;
@@ -99,18 +106,20 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  gap: 1rem;
+  // margin-bottom: 0.5rem;
 
   @include medium {
+    gap: 0.5rem;
     width: 45%;
+    margin: 0;
   }
   @include large {
-    margin: 0;
   }
 }
 input,
-select {
+select,
+textarea {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -119,9 +128,12 @@ select {
 label {
   font-size: 1rem;
 }
-.qty {
-  margin-top: 0.5rem;
-}
+// .qty {
+//   margin-top: 1rem;
+//   @include medium {
+//     margin-top: 0.5rem;
+//   }
+// }
 .desiredP {
   display: flex;
   gap: 1rem;
@@ -208,10 +220,29 @@ label {
     padding: 2rem;
   }
 }
-
+.DonkeyMeat,
+.DonkeyMilk,
+.LiveDonkey {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  @include medium {
+    gap: 0.5rem;
+  }
+}
+.LiveDonkey,
+.DonkeyMeat {
+  margin-bottom: 1rem;
+  @include medium {
+    margin-bottom: 0;
+  }
+}
 .BreadCrumb {
-  background-image: url("../assets/service/stable5.webp");
+  background-image: url("../assets/service/donkeys-banner.webp");
   // background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   min-height: 150px;
   text-align: center;
   display: flex;
@@ -335,24 +366,40 @@ label {
 }
 .serviceCard {
   display: flex;
-  max-width: 500px;
+  max-width: 400px;
   gap: 1rem;
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(53, 14, 14, 0.06);
   padding: 1rem 1.5rem;
   align-items: center;
-
-  img {
-    max-width: 40px;
+  @include mobileMax {
+    flex-direction: column;
+    align-items: flex-start;
   }
   @include medium {
     flex-direction: column;
     align-items: flex-start;
   }
+  .serviceCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
   h5 {
     font-size: 1.1rem;
     font-weight: 600;
     color: $bgColor;
+  }
+  .pdIcon {
+    padding: 1.3rem;
+    background-color: $bgColor;
+    border-radius: 50%;
+    &:hover {
+      background-color: $textColor;
+    }
+    img {
+      max-width: 40px;
+    }
   }
 }
 .partnership {
@@ -367,9 +414,6 @@ label {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  img {
-    max-width: 500px;
-  }
 }
 .pageOne {
   display: flex;
@@ -377,10 +421,6 @@ label {
   gap: 2rem;
 
   justify-content: center;
-  img {
-    max-width: 500px;
-    width: 100%;
-  }
 }
 .home_gallery_pht_2 {
   display: flex;
@@ -399,6 +439,7 @@ label {
     border: none;
   }
 }
+
 .pageTwo,
 .pageThree,
 .pageFour {
@@ -406,13 +447,14 @@ label {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-
-  img {
-    max-width: 500px;
-    width: 100%;
+}
+.home_gallery--img {
+  max-width: 300px;
+  width: 100%;
+  @include medium {
+    max-width: 400px;
   }
 }
-
 .category {
   display: flex;
   flex-direction: column;
@@ -439,4 +481,25 @@ label {
 .firtSection,
 .FourthSection {
   background-color: $Background-col;
+}
+.contact-us {
+  width: 100%;
+  display: block;
+  .BasicInfo {
+    width: 100%;
+  }
+  button {
+    align-self: flex-end;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: $bgColor;
+    margin-top: 2rem;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $textColor;
+      color: $textColor;
+    }
+  }
 }
