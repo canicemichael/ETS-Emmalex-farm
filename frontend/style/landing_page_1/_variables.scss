@@ -9,7 +9,19 @@ $primary-col-6: #cc9444;
 $primary-col-7: #dc8c54;
 $primary-col-8: #a46c2c;
 
+$tranbgColor: #1e120bd3;
+$textColor: #1e120b;
+$accentColor: #dc8c54;
 
+$bgColor: #813b0d; // pri-col-5
+$Background-col: #fdf2ea54; // 
+$dark-accentColor: #dc7035;
+$li-color: #03034e;
+$grayishbalck: #323232;
+$para-color: #000814;
+$light-lightGrey: #d9d9d9;
+$back-Col-main: #f6faff;
+$header-bg: #e1eff8;
 
 
 $box-shadow: #DFE2ED;
@@ -21,9 +33,32 @@ $gray: rgb(230, 218, 218);
 $background-col-dash: #F6FAFF;
 $background-col-one: #fdf2ea54;
 
+
+
 // media queries
-$baby-shark: 400px;
-$brother-shark: 600px;
-$mama-shark: 800px;
-$uncle-shark: 1200px;
-$papa-shark: 1400px;
+$large_screen: 1150px;
+
+$medium_screen: 960px;
+$medium_screenm: 1200px;
+$medium_screenl: 1300px;
+
+@mixin large {
+  @media (min-width: $large_screen) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $medium_screen) {
+    @content;
+  }
+}
+@mixin mmedium {
+  @media (min-width: $medium_screenm) {
+    @content;
+  }
+}
+@mixin lmedium {
+  @media (min-width: $medium_screenl) {
+    @content;
+  }
+}
