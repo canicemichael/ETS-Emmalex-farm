@@ -53,8 +53,10 @@
     height: calc(50% - 20px);
     min-width: 300px;
     min-height: 200px;
-    margin: 10px;
+    display: flex;
+    // margin: 10px;
     overflow: hidden;
+    border-radius: 5px;
     box-shadow: 0 0 20px 0 rgba(53, 14, 14, 0.6);
 }
 
@@ -66,7 +68,6 @@
     height: 14em;
     min-height: 8em;
     object-fit: cover;
-    border-radius: 5px;
     cursor: pointer;
     transition: 1s;
 
