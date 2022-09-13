@@ -22,6 +22,44 @@
     padding: 6rem 1rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 954px) {
+    .donkey-stable{
+        padding: 3rem 1rem;
+        padding-top: 2rem;
+    }
+    .farm-feed{
+        padding: 3rem 1rem;
+    }
+    .medicine {
+        padding: 3rem 1rem;
+    }
+    .planted-grass {
+        padding: 3rem 1rem;
+    }
+    .abbatoir {
+        padding: 3rem 1rem;
+    }
+}
+
+@media screen and (min-width: 20px) and (max-width: 768px) {
+    .donkey-stable{
+        padding: 2rem 1rem;
+        padding-top: 2rem;
+    }
+    .farm-feed{
+        padding: 2rem 1rem;
+    }
+    .medicine {
+        padding: 2rem 1rem;
+    }
+    .planted-grass {
+        padding: 2rem 1rem;
+    }
+    .abbatoir {
+        padding: 2rem 1rem;
+    }
+}
+
 .donkey_stable_head{
     text-align: center;
     margin-bottom: 1em;
@@ -46,6 +84,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+@media screen and (max-width: 622px) { 
+    .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        // max-height: auto;
+        padding: 20em 0;
+    }
 }
 
 .gallery-image{
