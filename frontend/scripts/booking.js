@@ -5,7 +5,25 @@ let DonkeyMilkDetails = document.querySelector(".DonkeyMilk");
 let LiveDonkey = document.querySelector("#live_donkey");
 let DonkeyMeat = document.querySelector("#donkey_meat");
 let DonkeyMilk = document.querySelector("#donkey_milk");
+let Adoption = document.querySelector(".Adoption");
+let Excursions = document.querySelector(".Excursions");
+let excursionchecked = document.querySelector("#excursion");
+let adoptchecked = document.querySelector("#adopt");
 
+excursionchecked.addEventListener("click", () => {
+  if (excursionchecked.checked === true) {
+    Excursions.style.display = "flex";
+  } else {
+    Excursions.style.display = "none";
+  }
+});
+adoptchecked.addEventListener("click", () => {
+  if (adoptchecked.checked === true) {
+    Adoption.style.display = "block";
+  } else {
+    Adoption.style.display = "none";
+  }
+});
 LiveDonkey.addEventListener("click", () => {
   if (LiveDonkey.checked === true) {
     LiveDonkeyDetails.style.display = "block";

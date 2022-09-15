@@ -56,9 +56,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1150px) {
   .mobile {
     display: none;
   }
@@ -70,7 +72,6 @@ li {
 
 .mainNav ul {
   margin: 0;
-  margin-top: 1rem;
   padding: 0;
 }
 
@@ -87,6 +88,12 @@ li {
           justify-content: space-between;
 }
 
+@media (min-width: 1150px) {
+  .mainNav .Container {
+    padding-block: 2rem;
+  }
+}
+
 .logo {
   max-width: 200px;
 }
@@ -97,10 +104,9 @@ li {
 
 .priMenu {
   display: none;
-  margin-top: 1rem;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1150px) {
   .priMenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,16 +133,10 @@ li {
   }
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-}
-
 ul ul {
   position: absolute;
   left: -999em;
-  top: 10rem;
+  top: 11.2rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -156,7 +156,6 @@ ul li:active ul {
 ul li:hover ul li,
 ul li:active ul li {
   text-decoration: none;
-  padding: 0.6rem 2rem;
 }
 
 ul li:hover ul li:hover,
@@ -178,6 +177,13 @@ ul li:active ul li:hover {
   background-color: #1e120bd3;
   width: 100%;
   z-index: 999999;
+  padding-top: 1rem;
+}
+
+@media (max-width: 560px) {
+  .sticky-animation {
+    display: none;
+  }
 }
 
 .sticky-animation li,
@@ -188,7 +194,7 @@ ul li:active ul li:hover {
 .sticky-animation ul ul {
   position: absolute;
   left: -999em;
-  top: 6rem;
+  top: 5.5rem;
 }
 
 .sticky-animation ul li:hover,

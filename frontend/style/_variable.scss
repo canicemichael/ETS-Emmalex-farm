@@ -6,6 +6,7 @@ $tranbgColor: #1e120bd3;
 $textColor: #1e120b;
 
 $large_screen: 1150px;
+$large_screenl: 1210px;
 $medium_screen: 960px;
 $mobile_screen: 560px;
 $medium_screenm: 1200px;
@@ -16,6 +17,12 @@ $medium_screenl: 1300px;
     @content;
   }
 }
+@mixin largel {
+  @media (min-width: $large_screenl) {
+    @content;
+  }
+}
+
 @mixin mobileMax {
   @media (max-width: $mobile_screen) {
     @content;

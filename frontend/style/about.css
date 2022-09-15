@@ -95,6 +95,11 @@ p {
   width: 100%;
   align-items: center;
 }
+.about h2 {
+  font-size: clamp(2rem, 3.5vw, 4.5rem);
+  font-weight: 600;
+}
+
 .content {
   background-color: var(--secondaryColor);
 }
@@ -941,9 +946,11 @@ remove the container padding
 
   .mission1 {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
   }
-
+  .mission1 h4 {
+    text-align: center;
+  }
   .premium {
     text-align: center;
     display: flex;

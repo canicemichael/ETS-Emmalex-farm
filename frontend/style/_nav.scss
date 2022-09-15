@@ -38,7 +38,7 @@
     padding: 0;
   }
   .Container {
-    padding-block: 1rem;
+    // padding-block: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@
     }
   }
   @include large {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 ul,
@@ -76,6 +76,7 @@ li {
   margin: 0;
   padding: 0;
 }
+
 ul {
   ul {
     position: absolute;
@@ -197,4 +198,7 @@ ul {
 }
 #minus {
   display: none;
+}
+.li {
+  padding-block: 2rem;
 }
