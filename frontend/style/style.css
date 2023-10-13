@@ -649,7 +649,8 @@ label {
 #farm-crop,
 #feed,
 #medicine,
-#stable {
+#stable,
+#cocoa {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -657,6 +658,10 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#cocoa .home_gallery_pht_1 {
+  display: none;
 }
 
 .pageOne {
@@ -712,7 +717,8 @@ label {
 
 .pageTwo,
 .pageThree,
-.pageFour {
+.pageFour,
+.pageFive {
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

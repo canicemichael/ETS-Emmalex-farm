@@ -207,7 +207,7 @@
         <div>
           <div class="heroFlex Container">
             <section class="EmailBooking hidden">
-              <h3>Book Donkey Via Email</h3>
+              <h3>Book Via Email</h3>
               <form
                 name="booking-form"
                 data-netlify="true"
@@ -259,6 +259,13 @@
                         name="adopt_btnselect"
                         id="adopt"
                       />Adoption</label
+                    >
+                    <label for="cocoa"
+                      ><input
+                        type="checkbox"
+                        name="cocoa_btnselect"
+                        id="cocoa"
+                      />Cocoa</label
                     >
                   </div>
                 </div>
@@ -341,6 +348,7 @@
                         />
                       </div>
                     </div>
+                    
                   </div>
                   <div class="otherbooking">
                     <div>
@@ -458,6 +466,39 @@
                           />
                         </div>
                       </div>
+                      <div class="CocoaQua">
+                        <div class="formItem">
+                          <label for="donkeySpecies">Cocoa</label>
+                          <select name="donkey milk Species" id="donkeySpecies">
+                            <option value="Miniature Mediterranean">
+                              Poudre de Cocoa
+                            </option>
+                            <option value="American Mammoth">
+                              Chocolate - Gingembre
+                            </option>
+                            <option value="Appaloosa Horses">
+                              Chocolate - LOH DJIBOUA
+                            </option>
+                            <option value="Standard Donkey">
+                              Chocolate - Feves Torrefiees
+                            </option>
+                            <!-- <option value="Baudet Du Potiu">
+                              Cocoa type 5
+                            </option> -->
+                          </select>
+                        </div>
+                        <div class="formItem">
+                          <label for="Milkquantity">
+                            Cocoa quantity
+                          </label>
+                          <input
+                            type="text"
+                            name="quantity"
+                            id="Milkquantity"
+                            placeholder="Please enter the quantity of cocoa needed"
+                          />
+                        </div>
+                      </div>
                     </div>
 
                     <button type="submit">Book</button>
@@ -475,7 +516,7 @@
                       id="img-icon"
                     />
                     <div>
-                      <h5>Book Donkey Via Call</h5>
+                      <h5>Book Via Call</h5>
                       <p>Click to Call</p>
                     </div>
                   </a>
@@ -489,7 +530,7 @@
                       id="img-icon"
                     />
                     <div>
-                      <h5>Book Donkey Via Whatsapp</h5>
+                      <h5>Book Via Whatsapp</h5>
                       <p>Click to Message</p>
                     </div>
                   </a>
